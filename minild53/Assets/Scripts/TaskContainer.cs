@@ -33,13 +33,45 @@ public class TaskContainer : MonoBehaviour {
 
 	public void increaseValue()
 	{
+		Game.Instance.getPlayer ().age.addWeek ();
+
+
+		bool fullyCompleted = false;
 		slider.value = slider.value + 0.1f;
 		if(slider.value >= 1){
 			slider.value -= 1;
-		}
-		Game.Instance.getPlayer ().money += 50;
-		Game.Instance.getPlayer ().age.addWeek ();
-		Game.Instance.getPlayer ().changeEnergy (-5);
 
+			fullyCompleted = true;
+		}
+		applyTaskEffects (task, fullyCompleted);
+
+
+
+	}
+
+	public void applyTaskEffects(Task task, bool full)
+	{
+		foreach (TaskEffect effect in task.complitionEffects) {
+			applyEffect(effect, full);
+		}
+	}
+
+	public void applyEffect(TaskEffect effect, bool full)
+	{
+		//if (full && (effect.type == TaskEffectType.BuildingExpChange)) {
+			// то увеличиваем опыт
+			// и обновляем его бар
+			//return;
+		//}
+
+		switch (effect.type) {
+		case TaskEffectType.MoneyChange:
+			Game.Instance.getPlayer ().money += effect.amount;
+			break;
+
+		case TaskEffectType.EnergyChange:
+			Game.Instance.getPlayer ().changeEnergy (effect.amount);
+			break;
+		}
 	}
 }
