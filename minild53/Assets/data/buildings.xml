@@ -11,7 +11,7 @@
 		</Difficulty>
 	</Difficulties>
 
-	<Building Name="Science" Type="Science">
+	<Building Name="Science" Type="Science" x="100" y="50">
 		<Level ExpToLevel="50">
 			<Tasks>
 				<Task Name="Do research" >
@@ -25,7 +25,7 @@
 		</Level>
 	</Building>
 
-	<Building Name="Home" Type="Home">
+	<Building Name="Home" Type="Home" x="250" y="500">
 		<Level ExpToLevel="50" >
 			<Tasks>
 				<Task Name="Rest on a camp-cot" >
