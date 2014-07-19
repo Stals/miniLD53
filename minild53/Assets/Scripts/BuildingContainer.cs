@@ -23,6 +23,7 @@ public class BuildingContainer : MonoBehaviour {
 
 	void OnGUI()
 	{
-		progressSlider.value = building.getCurrentBuildingLevel ().getCurrentExpFactor ();
+		float targetValue = building.getCurrentBuildingLevel ().getCurrentExpFactor ();
+		progressSlider.value = Mathf.Lerp(progressSlider.value, targetValue, Time.deltaTime * 5f);
 	}
 }

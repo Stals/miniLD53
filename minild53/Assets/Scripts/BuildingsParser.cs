@@ -38,7 +38,7 @@ public class BuildingsParser {
 		{
 			TaskEffect effect = new TaskEffect ();
 			effect.type = TaskEffectType.MoneyChange;
-			effect.amount = 85;
+			effect.amount = 10;
 			
 			effects.Add(effect);
 		}
