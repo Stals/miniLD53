@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
+
 public class BuildingsParser {
 	static List<Difficulty> difficulties;
 
@@ -68,6 +69,15 @@ public class BuildingsParser {
 			task.name = "research";
 			//task.requirements
 			task.complitionEffects = getDifficultyByName ("Easy").getEffectsForLevel (1);
+			tasks.Add(task);
+		}
+
+		{
+			Task task = new Task ();
+			task.name = "discover";
+			//task.requirements
+			task.complitionEffects = getDifficultyByName ("Easy").getEffectsForLevel (1);
+			tasks.Add(task);
 		}
 
 		return tasks;
@@ -79,18 +89,40 @@ public class BuildingsParser {
 
 		List<Building> buildings = new List<Building>();
 
-		Building building = new Building (BuildingType.Science);
-		building.levels = new List<BuildingLevel> ();
+		{
+			Building building = new Building (BuildingType.Science);
+			building.levels = new List<BuildingLevel> ();
+
+			{
+				BuildingLevel level = new BuildingLevel (100);
+				level.tasks = getFakeTasks ();
+				building.levels.Add (level);
+			}
+			{
+				BuildingLevel level = new BuildingLevel (200);
+				level.tasks = getFakeTasks ();
+				building.levels.Add (level);
+			}
+
+			buildings.Add(building);
+		}
 
 		{
-			BuildingLevel level = new BuildingLevel (100);
-			level.tasks = getFakeTasks ();
-			building.levels.Add (level);
-		}
-		{
-			BuildingLevel level = new BuildingLevel (200);
-			level.tasks = getFakeTasks ();
-			building.levels.Add (level);
+			Building building = new Building (BuildingType.Wackdonalds);
+			building.levels = new List<BuildingLevel> ();
+			
+			{
+				BuildingLevel level = new BuildingLevel (100);
+				level.tasks = getFakeTasks ();
+				building.levels.Add (level);
+			}
+			{
+				BuildingLevel level = new BuildingLevel (200);
+				level.tasks = getFakeTasks ();
+				building.levels.Add (level);
+			}
+
+			buildings.Add(building);
 		}
 
 		return buildings;

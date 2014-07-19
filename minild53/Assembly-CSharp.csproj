@@ -67,6 +67,7 @@
      <Compile Include="Assets\NGUI\Examples\Scripts\Other\WindowAutoYaw.cs" />
      <Compile Include="Assets\NGUI\Examples\Scripts\Other\WindowDragTilt.cs" />
      <Compile Include="Assets\Scripts\Building.cs" />
+     <Compile Include="Assets\Scripts\BuildingContainer.cs" />
      <Compile Include="Assets\Scripts\BuildingsParser.cs" />
      <Compile Include="Assets\Scripts\Difficulty.cs" />
      <Compile Include="Assets\Scripts\Game.cs" />

@@ -1,7 +1,19 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+// TODO этот же класс добавляет prefab что дается для отображения
 public class TaskContainer : MonoBehaviour {
+
+	[SerializeField]
+	GameObject EffectPrefab;
+	
+	[SerializeField]
+	UILabel taskNameLabel;
+
+	// TODO use and give stuff from here
+
+
+	public Task task;
 
 	UISlider slider;
 	// Use this for initialization
@@ -12,6 +24,11 @@ public class TaskContainer : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	
+	}
+
+	public void updateData()
+	{
+		taskNameLabel.text = task.name;
 	}
 
 	public void increaseValue()

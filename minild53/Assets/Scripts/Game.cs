@@ -36,4 +36,14 @@ public class Game  {
 	{
 		// fake
 	}
+
+	public Building getBuildingByType(BuildingType type)
+	{
+		foreach (Building building in buildings) {
+			if(building.type == type){
+				return building;
+			}
+		}
+		return null;
+	}
 }

@@ -9,6 +9,8 @@ public enum BuildingType{
 	Home
 };
 
+// TODO get icon for building type
+
 public class BuildingLevel{
 	public BuildingLevel(int _maxExp)
 	{
