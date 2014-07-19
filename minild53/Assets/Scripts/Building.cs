@@ -14,11 +14,8 @@ public class BuildingLevel{
 }
 
 public class Building {
-	List<BuildingLevel> levels;
-	BuildingType type;
+	public int currentLevel { get; set; }
 
-	// Use this for initialization
-	void Start () {
-	
-	}
+	public List<BuildingLevel> levels;
+	public BuildingType type;
 }

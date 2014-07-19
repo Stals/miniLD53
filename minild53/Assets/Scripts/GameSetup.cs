@@ -5,14 +5,6 @@ public class GameSetup : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
+		Game.Instance.init ();
 	}
-
-	void getBuildings(){
-		// fake for now
-
-
-
-	}
-
 }

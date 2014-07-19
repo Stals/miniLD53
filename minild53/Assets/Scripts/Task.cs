@@ -21,6 +21,8 @@ public class TaskEffect{
 };
 
 public class Task {
+	string name;
+
 	List<Requirement> requirements;
 	List<TaskEffect> complitionEffects;
 }

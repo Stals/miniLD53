@@ -5,14 +5,14 @@
 			<Effect Type="Money" Amount="75" />
 			<Effect Type="Energy" Amount="-5" />
 		</Difficulty>
-		
+
 		<Difficulty Name="HomeRest" >
 			<Effect Type="Energy" Amount="5" />
 		</Difficulty>
 	</Difficulties>
 
 	<Building Name="Science" Type="Science">
-		<Level>
+		<Level ExpToLevel="50">
 			<Tasks>
 				<Task Name="Do research" >
 					<Requirements>
@@ -26,9 +26,9 @@
 	</Building>
 
 	<Building Name="Home" Type="Home">
-		<Level>
+		<Level ExpToLevel="50" >
 			<Tasks>
-				<Task Name="Rest on Sofa" >
+				<Task Name="Rest on a camp-cot" >
 					<Requirements />
 					<Effects difficulty="HomeRest" />
 				</Task>
