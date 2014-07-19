@@ -116,7 +116,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 450, y: 42, z: 1}
+  m_Size: {x: 221, y: 21, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &11400000
 MonoBehaviour:
@@ -170,8 +170,8 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 450
-  mHeight: 42
+  mWidth: 225
+  mHeight: 21
   mDepth: 4
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
@@ -220,8 +220,8 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 450
-  mHeight: 42
+  mWidth: 225
+  mHeight: 21
   mDepth: 5
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0

@@ -40,8 +40,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 23, y: 277.5, z: 0}
-  m_LocalScale: {x: .99989748, y: .99989748, z: .99989748}
+  m_LocalPosition: {x: -81.7245636, y: 282.886261, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400002}
   m_Father: {fileID: 0}
@@ -72,29 +72,29 @@ MonoBehaviour:
   leftAnchor:
     target: {fileID: 0}
     relative: 0
-    absolute: 0
+    absolute: 24
   rightAnchor:
     target: {fileID: 0}
     relative: 0
-    absolute: 450
+    absolute: 248
   bottomAnchor:
     target: {fileID: 0}
     relative: 1
-    absolute: -41
+    absolute: -44
   topAnchor:
     target: {fileID: 0}
     relative: 1
-    absolute: 1
+    absolute: -24
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 450
-  mHeight: 42
+  mWidth: 224
+  mHeight: 20
   mDepth: 4
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 10.7142859
+  aspectRatio: 11.1999998
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -122,7 +122,7 @@ MonoBehaviour:
   thumb: {fileID: 0}
   mBG: {fileID: 11400000}
   mFG: {fileID: 11400004}
-  mValue: 0
+  mValue: 1
   mFill: 0
   numberOfSteps: 0
   onChange: []
@@ -160,8 +160,8 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: .356416315, g: .845588207, b: .0746107474, a: 1}
   mPivot: 4
-  mWidth: 450
-  mHeight: 42
+  mWidth: 225
+  mHeight: 21
   mDepth: 5
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0

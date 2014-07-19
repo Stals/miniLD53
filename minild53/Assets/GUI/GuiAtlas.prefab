@@ -43,30 +43,30 @@ MonoBehaviour:
   mSprites:
   - name: small_bar_empty
     x: 0
-    y: 87
-    width: 34
-    height: 41
-    borderLeft: 16
-    borderRight: 16
+    y: 43
+    width: 17
+    height: 21
+    borderLeft: 8
+    borderRight: 8
     borderTop: 0
     borderBottom: 0
     paddingLeft: 0
     paddingRight: 0
     paddingTop: 0
-    paddingBottom: 1
+    paddingBottom: 0
   - name: small_bar_science
     x: 0
-    y: 45
-    width: 34
-    height: 41
-    borderLeft: 16
-    borderRight: 16
+    y: 21
+    width: 17
+    height: 21
+    borderLeft: 8
+    borderRight: 8
     borderTop: 0
     borderBottom: 0
     paddingLeft: 0
     paddingRight: 0
     paddingTop: 0
-    paddingBottom: 1
+    paddingBottom: 0
   mPixelSize: 1
   mReplacement: {fileID: 0}
   mCoordinates: 0
