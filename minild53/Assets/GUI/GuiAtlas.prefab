@@ -42,7 +42,7 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: a7f34681c85d6439599ddb7edf5deeb2, type: 2}
   mSprites:
   - name: big_bar_empty
-    x: 1000
+    x: 983
     y: 987
     width: 16
     height: 37
@@ -55,7 +55,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: big_bar_science
-    x: 983
+    x: 1000
     y: 987
     width: 16
     height: 37
@@ -80,6 +80,32 @@ MonoBehaviour:
     paddingRight: 42
     paddingTop: 0
     paddingBottom: 845
+  - name: icon_energy
+    x: 983
+    y: 948
+    width: 13
+    height: 16
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: icon_money
+    x: 983
+    y: 930
+    width: 11
+    height: 17
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
   - name: small_bar_empty
     x: 983
     y: 965

@@ -820,12 +820,12 @@ MonoBehaviour:
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
   mWidth: 16
-  mHeight: 15
+  mHeight: 18
   mDepth: 0
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 1.06666672
+  aspectRatio: .666666687
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -837,7 +837,7 @@ MonoBehaviour:
   bottomType: 1
   topType: 1
   mAtlas: {fileID: 11400000, guid: 09805d5046aed4339917ef58c58b503a, type: 2}
-  mSpriteName: small_bar_empty
+  mSpriteName: icon_money
   mFillCenter: 1
 --- !u!114 &11400018
 MonoBehaviour:
@@ -1068,12 +1068,12 @@ MonoBehaviour:
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
   mWidth: 16
-  mHeight: 15
+  mHeight: 16
   mDepth: 0
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 1.06666672
+  aspectRatio: .875
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -1085,7 +1085,7 @@ MonoBehaviour:
   bottomType: 1
   topType: 1
   mAtlas: {fileID: 11400000, guid: 09805d5046aed4339917ef58c58b503a, type: 2}
-  mSpriteName: small_bar_empty
+  mSpriteName: icon_energy
   mFillCenter: 1
 --- !u!114 &11400028
 MonoBehaviour:
