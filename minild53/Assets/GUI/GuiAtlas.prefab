@@ -41,6 +41,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: a7f34681c85d6439599ddb7edf5deeb2, type: 2}
   mSprites:
+  - name: big_bar_empty
+    x: 1000
+    y: 987
+    width: 16
+    height: 37
+    borderLeft: 7
+    borderRight: 7
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: big_bar_science
+    x: 983
+    y: 987
+    width: 16
+    height: 37
+    borderLeft: 7
+    borderRight: 7
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
   - name: fnt_big_0
     x: 0
     y: 845
@@ -56,7 +82,7 @@ MonoBehaviour:
     paddingBottom: 845
   - name: small_bar_empty
     x: 983
-    y: 1003
+    y: 965
     width: 17
     height: 21
     borderLeft: 8
@@ -69,7 +95,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: small_bar_science
     x: 1001
-    y: 1003
+    y: 965
     width: 17
     height: 21
     borderLeft: 8
