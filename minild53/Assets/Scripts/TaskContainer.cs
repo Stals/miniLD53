@@ -20,5 +20,6 @@ public class TaskContainer : MonoBehaviour {
 		if(slider.value >= 1){
 			slider.value -= 1;
 		}
+		Game.Instance.getPlayer ().money += 50;
 	}
 }
