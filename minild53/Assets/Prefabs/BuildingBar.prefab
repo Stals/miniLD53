@@ -170,7 +170,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100010}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 92.4556885, z: 0}
+  m_LocalPosition: {x: 0, y: 29, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400002}
@@ -256,12 +256,12 @@ MonoBehaviour:
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
   mWidth: 275
-  mHeight: 42
+  mHeight: 37
   mDepth: 4
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 6.54761887
+  aspectRatio: 7.43243265
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -273,7 +273,7 @@ MonoBehaviour:
   bottomType: 1
   topType: 1
   mAtlas: {fileID: 11400000, guid: 09805d5046aed4339917ef58c58b503a, type: 2}
-  mSpriteName: small_bar_empty
+  mSpriteName: big_bar_empty
   mFillCenter: 1
 --- !u!114 &11400004
 MonoBehaviour:
@@ -328,12 +328,12 @@ MonoBehaviour:
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
   mWidth: 275
-  mHeight: 42
+  mHeight: 37
   mDepth: 5
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 6.54761887
+  aspectRatio: 7.43243265
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -345,7 +345,7 @@ MonoBehaviour:
   bottomType: 1
   topType: 1
   mAtlas: {fileID: 11400000, guid: 09805d5046aed4339917ef58c58b503a, type: 2}
-  mSpriteName: small_bar_science
+  mSpriteName: big_bar_science
   mFillCenter: 1
 --- !u!114 &11400008
 MonoBehaviour:
@@ -359,6 +359,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tasksGrid: {fileID: 11400014}
+  progressSlider: {fileID: 11400004}
 --- !u!114 &11400010
 MonoBehaviour:
   m_ObjectHideFlags: 1

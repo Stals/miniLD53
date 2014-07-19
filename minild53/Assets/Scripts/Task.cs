@@ -57,4 +57,15 @@ public class Task {
 	public List<TaskEffect> complitionEffects;
 
 	public Building building;
+
+	public TaskEffect getEffectByType(TaskEffectType type)
+	{
+		foreach (TaskEffect effect in complitionEffects) {
+			if(effect.type == type){
+				return  effect;
+			}
+		}
+
+		return null;
+	}
 }

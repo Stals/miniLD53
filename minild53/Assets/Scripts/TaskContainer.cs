@@ -31,8 +31,41 @@ public class TaskContainer : MonoBehaviour {
 		taskNameLabel.text = task.name;
 	}
 
+	private bool enoughEnergy()
+	{
+		TaskEffect effect = task.getEffectByType (TaskEffectType.EnergyChange);
+
+		if(effect != null){
+			if(effect.amount < 0){
+				return Game.Instance.getPlayer().energy >= effect.amount;
+			}
+		}
+
+		return true;
+	}
+
+	private bool enoughMoney()
+	{
+		TaskEffect effect = task.getEffectByType (TaskEffectType.MoneyChange);
+		
+		if(effect != null){
+			if(effect.amount < 0){
+				return Game.Instance.getPlayer().money >= effect.amount;
+			}
+
+		}
+		return true;
+	}
+
 	public void increaseValue()
 	{
+		if (!enoughEnergy ()) {
+			return;		
+		}
+		if (!enoughMoney ()) {
+			return;
+		}
+
 		Game.Instance.getPlayer ().age.addWeek ();
 
 
@@ -44,9 +77,6 @@ public class TaskContainer : MonoBehaviour {
 			fullyCompleted = true;
 		}
 		applyTaskEffects (task, fullyCompleted);
-
-
-
 	}
 
 	public void applyTaskEffects(Task task, bool full)
