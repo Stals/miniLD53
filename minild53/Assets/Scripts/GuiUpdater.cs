@@ -24,6 +24,8 @@ public class GuiUpdater : MonoBehaviour {
 		moneyLabel.text = moneyToString (Game.Instance.getPlayer ().money);
 
 		ageLabel.text = "Age: " + Game.Instance.getPlayer().age.asString ();
+
+		energyBar.value = Game.Instance.getPlayer().getCurrentEnergyFactor ();
 	}
 
 	string moneyToString(int money)

@@ -22,6 +22,7 @@ public class TaskContainer : MonoBehaviour {
 		}
 		Game.Instance.getPlayer ().money += 50;
 		Game.Instance.getPlayer ().age.addWeek ();
+		Game.Instance.getPlayer ().changeEnergy (-5);
 
 	}
 }

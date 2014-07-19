@@ -43,10 +43,20 @@ public class Player {
 
 		age = new Age (20, 1, 1);
 	}
-
+	
+	public Age age;
 	public int energy { get; set; }
 	public int maxEnergy{ get; set; }
 	public int money { get; set; }
 
-	public Age age;
+	public float getCurrentEnergyFactor()
+	{	
+		return (float)energy / maxEnergy;
+	}
+
+	public void changeEnergy(int e)
+	{
+		energy += e;
+	}
+
 }

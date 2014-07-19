@@ -1369,6 +1369,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: .99981761
       objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 33b30112876d9416aa4f1e63bb266cf8, type: 2}
+      propertyPath: mValue
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 33b30112876d9416aa4f1e63bb266cf8, type: 2}
   m_RootGameObject: {fileID: 2137250499}
@@ -1739,7 +1743,7 @@ MonoBehaviour:
   thumb: {fileID: 0}
   mBG: {fileID: 2137250502}
   mFG: {fileID: 175963898}
-  mValue: 0
+  mValue: 1
   mFill: 0
   numberOfSteps: 0
   onChange: []
