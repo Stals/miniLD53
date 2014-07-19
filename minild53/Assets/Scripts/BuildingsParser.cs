@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-
+using System.Xml;
+//http://unitynoobs.blogspot.ru/2011/02/xml-loading-data-from-xml-file.html
 
 public class BuildingsParser {
 	static List<Difficulty> difficulties;
@@ -46,16 +47,18 @@ public class BuildingsParser {
 		return effects;
 	}
 
-	public static List<Difficulty> getDifficultiesFromXML(/* difficulties node */)
+	public static List<Difficulty> getDifficultiesFromXML(XmlNode node)
 	{
 		List<Difficulty> difficulties = new List<Difficulty>();
 
-		Difficulty difficulty = new Difficulty ();
-		difficulty.name = "Easy";
-		difficulty.effects = getFakeEffects ();
+		XmlNodeList list = node.ChildNodes;
+		foreach (XmlNode diffNode in list) {
+			Difficulty difficulty = new Difficulty ();
+			difficulty.name = diffNode.Attributes["Name"].Value;
+			difficulty.effects = getFakeEffects ();
 
-		difficulties.Add (difficulty);
-
+			difficulties.Add (difficulty);
+		}
 		return difficulties;
 	}
 
@@ -85,7 +88,14 @@ public class BuildingsParser {
 
 	public static List<Building> getBuildingsFromXML()
 	{
-		difficulties = getDifficultiesFromXML (/* difficulties node */);
+		XmlDocument xmlDoc = new XmlDocument(); // xmlDoc is the new xml document.
+		xmlDoc.Load("Assets/data/buildings.xml"); // load the file.
+		XmlNode diffNode = xmlDoc.GetElementsByTagName("Difficulties")[0];
+
+		//XmlNodeList levelsList = xmlDoc.GetElementsByTagName("Difficulties")[0];
+
+
+		difficulties = getDifficultiesFromXML (diffNode);
 
 		List<Building> buildings = new List<Building>();
 
