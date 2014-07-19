@@ -255,13 +255,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 275
+  mWidth: 300
   mHeight: 37
   mDepth: 4
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 7.43243265
+  aspectRatio: 8.10810852
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -327,13 +327,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 275
+  mWidth: 300
   mHeight: 37
   mDepth: 5
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 7.43243265
+  aspectRatio: 8.10810852
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
