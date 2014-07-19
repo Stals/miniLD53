@@ -11,6 +11,9 @@ public class BuildingContainer : MonoBehaviour {
 	[SerializeField]
 	public UISlider progressSlider;
 
+	[SerializeField]
+	public UILabel levelLabel;
+
 	// Use this for initialization
 	void Start () {
 		// TODO update here
@@ -25,5 +28,7 @@ public class BuildingContainer : MonoBehaviour {
 	{
 		float targetValue = building.getCurrentBuildingLevel ().getCurrentExpFactor ();
 		progressSlider.value = Mathf.Lerp(progressSlider.value, targetValue, Time.deltaTime * 5f);
+
+		//levelLabel.text = "level " + building.currentLevel;
 	}
 }

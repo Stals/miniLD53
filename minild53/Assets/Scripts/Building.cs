@@ -42,6 +42,9 @@ public class BuildingLevel{
 }
 
 public class Building {
+	public delegate void OnLevelCompleted();
+	public OnLevelCompleted onCompleted;
+
 	public Building(BuildingType _type)
 	{
 		currentLevel = 1;
@@ -64,5 +67,13 @@ public class Building {
 	public void addLevel(BuildingLevel level)
 	{
 		levels.Add (level);
+
+		level.onCompleted += onCurrentLevelCompleted;
+	}
+
+	void onCurrentLevelCompleted()
+	{
+		currentLevel += 1;
+		if(onCompleted != null) onCompleted();
 	}
 }
