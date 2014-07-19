@@ -70,6 +70,7 @@
      <Compile Include="Assets\Scripts\BuildingContainer.cs" />
      <Compile Include="Assets\Scripts\BuildingsParser.cs" />
      <Compile Include="Assets\Scripts\Difficulty.cs" />
+     <Compile Include="Assets\Scripts\EnergyController.cs" />
      <Compile Include="Assets\Scripts\Game.cs" />
      <Compile Include="Assets\Scripts\GameSetup.cs" />
      <Compile Include="Assets\Scripts\GuiUpdater.cs" />

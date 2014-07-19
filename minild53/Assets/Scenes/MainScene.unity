@@ -374,7 +374,7 @@ MonoBehaviour:
     relative: 1
     absolute: 0
   updateAnchors: 1
-  mColor: {r: .356416315, g: .845588207, b: .0746107474, a: 1}
+  mColor: {r: .53103447, g: 1, b: 0, a: 1}
   mPivot: 4
   mWidth: 225
   mHeight: 21
@@ -2292,6 +2292,18 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: 33b30112876d9416aa4f1e63bb266cf8, type: 2}
+      propertyPath: mColor.r
+      value: .53103447
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: 33b30112876d9416aa4f1e63bb266cf8, type: 2}
+      propertyPath: mColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: 33b30112876d9416aa4f1e63bb266cf8, type: 2}
+      propertyPath: mColor.b
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 33b30112876d9416aa4f1e63bb266cf8, type: 2}
   m_RootGameObject: {fileID: 2137250499}
@@ -3451,6 +3463,7 @@ GameObject:
   - 4: {fileID: 2137250500}
   - 114: {fileID: 2137250502}
   - 114: {fileID: 2137250501}
+  - 114: {fileID: 2137250503}
   m_Layer: 8
   m_Name: EnergyBar
   m_TagString: Untagged
@@ -3545,6 +3558,17 @@ MonoBehaviour:
   mAtlas: {fileID: 11400000, guid: 09805d5046aed4339917ef58c58b503a, type: 2}
   mSpriteName: small_bar_empty
   mFillCenter: 1
+--- !u!114 &2137250503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2137250499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 617d18be46a814714afe2165a4cb5882, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2145245143
 GameObject:
   m_ObjectHideFlags: 0
