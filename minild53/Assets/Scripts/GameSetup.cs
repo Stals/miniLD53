@@ -6,8 +6,7 @@ public class GameSetup : MonoBehaviour {
 	[SerializeField]
 	BuildingContainer scienceContainer; 
 
-	[SerializeField]
-	GameObject taskPrefab;
+
 	
 
 	// Use this for initialization
@@ -19,32 +18,9 @@ public class GameSetup : MonoBehaviour {
 
 	void setupBuilding(BuildingContainer container, Building building)
 	{
-		container.building = building;
-
-		foreach (Task task in building.getCurrentBuildingLevel().tasks) {
-		
-			GameObject taskObject = createTask(container, task);
-
-
-
-			// TODo - subscribe to add exp
-		}
-
-		container.tasksGrid.Reposition();
+		container.setBuilding (building);
+		container.clearAndAddCurrentTasks ();
+	
 	}
 
-	GameObject createTask(BuildingContainer container,Task task)
-	{
-		// create task from prefab
-		GameObject taskObject;
-		taskObject = NGUITools.AddChild(container.tasksGrid.gameObject, taskPrefab);
-		taskObject.GetComponent<UISprite>().name = "task";
-		//UIEventListener.Get(bulbObject).onClick += onBulbClick;
-
-		TaskContainer taskContainer = taskObject.GetComponent<TaskContainer> ();
-		taskContainer.task = task;
-		taskContainer.updateData ();
-
-		return taskObject;
-	}
 }

@@ -103,7 +103,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scienceContainer: {fileID: 1798929477}
-  taskPrefab: {fileID: 100000, guid: 5389b816437214ba3b16ff0c4ed5460f, type: 2}
 --- !u!4 &74993117
 Transform:
   m_ObjectHideFlags: 0
@@ -3498,6 +3497,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tasksGrid: {fileID: 2070679546}
+  taskPrefab: {fileID: 100000, guid: 5389b816437214ba3b16ff0c4ed5460f, type: 2}
   progressSlider: {fileID: 1798929478}
   levelLabel: {fileID: 208351284}
 --- !u!114 &1798929478
@@ -3720,6 +3720,10 @@ Prefab:
       propertyPath: mValue
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11400008, guid: 7871e0482887d4d46be3b0a8434ea1dd, type: 2}
+      propertyPath: taskPrefab
+      value: 
+      objectReference: {fileID: 100000, guid: 5389b816437214ba3b16ff0c4ed5460f, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7871e0482887d4d46be3b0a8434ea1dd, type: 2}
   m_RootGameObject: {fileID: 1798929475}
