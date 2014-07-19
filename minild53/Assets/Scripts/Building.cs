@@ -10,11 +10,15 @@ public enum BuildingType{
 };
 
 public class BuildingLevel{
-	List<Task> tasks;
+	public int currentExp;
+	public int maxExp;
+
+	public List<Task> tasks;
 }
 
 public class Building {
 	public int currentLevel { get; set; }
+	
 
 	public List<BuildingLevel> levels;
 	public BuildingType type;
