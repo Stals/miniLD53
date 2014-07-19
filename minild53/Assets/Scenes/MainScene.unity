@@ -793,7 +793,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: 7871e0482887d4d46be3b0a8434ea1dd, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 31
+      value: 29
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 7871e0482887d4d46be3b0a8434ea1dd, type: 2}
       propertyPath: mSpriteName
@@ -807,6 +807,22 @@ Prefab:
       propertyPath: progressSlider
       value: 
       objectReference: {fileID: 1798929478}
+    - target: {fileID: 11400002, guid: 7871e0482887d4d46be3b0a8434ea1dd, type: 2}
+      propertyPath: mHeight
+      value: 37
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 7871e0482887d4d46be3b0a8434ea1dd, type: 2}
+      propertyPath: aspectRatio
+      value: 7.43243265
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400006, guid: 7871e0482887d4d46be3b0a8434ea1dd, type: 2}
+      propertyPath: mHeight
+      value: 37
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400006, guid: 7871e0482887d4d46be3b0a8434ea1dd, type: 2}
+      propertyPath: aspectRatio
+      value: 7.43243265
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7871e0482887d4d46be3b0a8434ea1dd, type: 2}
   m_RootGameObject: {fileID: 1798929475}
@@ -2658,12 +2674,12 @@ MonoBehaviour:
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
   mWidth: 275
-  mHeight: 42
+  mHeight: 37
   mDepth: 5
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 6.54761887
+  aspectRatio: 7.43243265
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -3079,12 +3095,12 @@ MonoBehaviour:
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
   mWidth: 275
-  mHeight: 42
+  mHeight: 37
   mDepth: 4
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 6.54761887
+  aspectRatio: 7.43243265
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -3426,7 +3442,7 @@ Transform:
   m_PrefabInternal: {fileID: 381051626}
   m_GameObject: {fileID: 2070679544}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 31, z: 0}
+  m_LocalPosition: {x: 0, y: 29, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1798929476}
