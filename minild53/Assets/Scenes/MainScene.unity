@@ -803,6 +803,10 @@ Prefab:
       propertyPath: mSpriteName
       value: big_bar_science
       objectReference: {fileID: 0}
+    - target: {fileID: 11400008, guid: 7871e0482887d4d46be3b0a8434ea1dd, type: 2}
+      propertyPath: progressSlider
+      value: 
+      objectReference: {fileID: 1798929478}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7871e0482887d4d46be3b0a8434ea1dd, type: 2}
   m_RootGameObject: {fileID: 1798929475}
@@ -3007,6 +3011,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tasksGrid: {fileID: 2070679546}
+  progressSlider: {fileID: 1798929478}
 --- !u!114 &1798929478
 MonoBehaviour:
   m_ObjectHideFlags: 0

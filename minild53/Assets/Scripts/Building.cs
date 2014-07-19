@@ -21,6 +21,18 @@ public class BuildingLevel{
 	public int currentExp;
 	public int maxExp;
 
+	public void addExp(int exp)
+	{
+		currentExp += exp;
+		// TODO add leveluping
+		// send event?
+	}
+
+	public float getCurrentExpFactor()
+	{	
+		return (float)currentExp / maxExp;
+	}
+
 	public List<Task> tasks;
 }
 
@@ -29,11 +41,16 @@ public class Building {
 	{
 		currentLevel = 1;
 		type = _type;
+
 	}
 
 	public int currentLevel { get; set; }
 	
-
 	public List<BuildingLevel> levels;
 	public BuildingType type;
+
+	public BuildingLevel getCurrentBuildingLevel()
+	{
+		return levels [currentLevel - 1];
+	}
 }

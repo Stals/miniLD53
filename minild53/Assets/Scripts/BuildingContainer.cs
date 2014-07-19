@@ -8,6 +8,9 @@ public class BuildingContainer : MonoBehaviour {
 	[SerializeField]
 	public UIGrid tasksGrid;
 
+	[SerializeField]
+	public UISlider progressSlider;
+
 	// Use this for initialization
 	void Start () {
 		// TODO update here
@@ -16,5 +19,10 @@ public class BuildingContainer : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	
+	}
+
+	void OnGUI()
+	{
+		progressSlider.value = building.getCurrentBuildingLevel ().getCurrentExpFactor ();
 	}
 }

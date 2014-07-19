@@ -46,12 +46,15 @@ public class TaskEffect{
 // TODO при парсе сразу раскрываем сложности - но не преобразовываем по уровню?
 // мы у эффекта спрашиваем отдавая ему уровнь наверное
 public class Task {
-	public Task()
+	public Task(Building _building)
 	{
+		building = _building;
 	}
 
 	public string name { get; set; }
 
 	public List<Requirement> requirements;
 	public List<TaskEffect> complitionEffects;
+
+	public Building building;
 }

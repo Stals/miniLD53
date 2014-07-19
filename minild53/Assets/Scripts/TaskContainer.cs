@@ -58,11 +58,11 @@ public class TaskContainer : MonoBehaviour {
 
 	public void applyEffect(TaskEffect effect, bool full)
 	{
-		//if (full && (effect.type == TaskEffectType.BuildingExpChange)) {
-			// то увеличиваем опыт
-			// и обновляем его бар
-			//return;
-		//}
+		if (full && (effect.type == TaskEffectType.BuildingExpChange)) {
+			task.building.getCurrentBuildingLevel().addExp(effect.amount);
+			// TODO и обновляем его бар?
+			return;
+		}
 
 		switch (effect.type) {
 		case TaskEffectType.MoneyChange:

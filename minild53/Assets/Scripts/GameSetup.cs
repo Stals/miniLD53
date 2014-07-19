@@ -21,7 +21,7 @@ public class GameSetup : MonoBehaviour {
 	{
 		container.building = building;
 
-		foreach (Task task in building.levels[building.currentLevel-1].tasks) {
+		foreach (Task task in building.getCurrentBuildingLevel().tasks) {
 		
 			GameObject taskObject = createTask(container, task);
 

@@ -22,7 +22,7 @@ public class BuildingsParser {
 		{
 			TaskEffect effect = new TaskEffect ();
 			effect.type = TaskEffectType.BuildingExpChange;
-			effect.amount = 50;
+			effect.amount = 10;
 
 			effects.Add(effect);
 		}
@@ -60,12 +60,12 @@ public class BuildingsParser {
 	}
 
 
-	public static List<Task> getFakeTasks()
+	public static List<Task> getFakeTasks(Building building)
 	{
 		List<Task> tasks = new List<Task> ();
 
 		{
-			Task task = new Task ();
+			Task task = new Task (building);
 			task.name = "research";
 			//task.requirements
 			task.complitionEffects = getDifficultyByName ("Easy").getEffectsForLevel (1);
@@ -73,7 +73,7 @@ public class BuildingsParser {
 		}
 
 		{
-			Task task = new Task ();
+			Task task = new Task (building);
 			task.name = "discover";
 			//task.requirements
 			task.complitionEffects = getDifficultyByName ("Easy").getEffectsForLevel (1);
@@ -95,12 +95,12 @@ public class BuildingsParser {
 
 			{
 				BuildingLevel level = new BuildingLevel (100);
-				level.tasks = getFakeTasks ();
+				level.tasks = getFakeTasks (building);
 				building.levels.Add (level);
 			}
 			{
 				BuildingLevel level = new BuildingLevel (200);
-				level.tasks = getFakeTasks ();
+				level.tasks = getFakeTasks (building);
 				building.levels.Add (level);
 			}
 
@@ -113,12 +113,12 @@ public class BuildingsParser {
 			
 			{
 				BuildingLevel level = new BuildingLevel (100);
-				level.tasks = getFakeTasks ();
+				level.tasks = getFakeTasks (building);
 				building.levels.Add (level);
 			}
 			{
 				BuildingLevel level = new BuildingLevel (200);
-				level.tasks = getFakeTasks ();
+				level.tasks = getFakeTasks (building);
 				building.levels.Add (level);
 			}
 
