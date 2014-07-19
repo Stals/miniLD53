@@ -10,6 +10,11 @@ public class TaskContainer : MonoBehaviour {
 	[SerializeField]
 	UILabel taskNameLabel;
 
+	[SerializeField]
+	GameObject energyEffect;
+	[SerializeField]
+	GameObject moneyEffect;
+
 	// TODO use and give stuff from here
 
 
@@ -29,6 +34,19 @@ public class TaskContainer : MonoBehaviour {
 	public void updateData()
 	{
 		taskNameLabel.text = task.name;
+
+		updateEffect (energyEffect, task.getEffectByType (TaskEffectType.EnergyChange));
+		updateEffect (moneyEffect, task.getEffectByType (TaskEffectType.MoneyChange));
+	}
+
+     public void updateEffect(GameObject effect, TaskEffect taskEffect)
+     {
+		if(taskEffect == null){
+			effect.SetActive(false);
+			return;
+		}
+		effect.GetComponentInChildren<UILabel> ().text = taskEffect.getAmountString ();
+		// TODO update image
 	}
 
 	private bool enoughEnergy()

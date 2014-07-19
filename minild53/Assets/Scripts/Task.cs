@@ -41,6 +41,12 @@ public class TaskEffect{
 
 		return TaskEffectType.UnknownChange;
 	}
+
+	public string getAmountString()
+	{
+		string sign = amount > 0 ? "+" : "";
+		return sign + amount;
+	}
 };
 
 // TODO при парсе сразу раскрываем сложности - но не преобразовываем по уровню?
