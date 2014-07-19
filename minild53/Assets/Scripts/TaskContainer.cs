@@ -15,6 +15,11 @@ public class TaskContainer : MonoBehaviour {
 	[SerializeField]
 	GameObject moneyEffect;
 
+	[SerializeField]
+	Color aboveZeroColor;
+	[SerializeField]
+	Color belowZeroColor;
+
 	// TODO use and give stuff from here
 
 
@@ -45,8 +50,13 @@ public class TaskContainer : MonoBehaviour {
 			effect.SetActive(false);
 			return;
 		}
-		effect.GetComponentInChildren<UILabel> ().text = taskEffect.getAmountString ();
-		// TODO update image
+		UILabel label = effect.GetComponentInChildren<UILabel> ();
+		label.text = taskEffect.getAmountString ();
+		if (taskEffect.amount < 0) {
+			label.color = belowZeroColor;
+		} else {
+			label.color = aboveZeroColor;
+		}
 	}
 
 	private bool enoughEnergy()

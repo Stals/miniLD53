@@ -665,6 +665,8 @@ MonoBehaviour:
   taskNameLabel: {fileID: 11400012}
   energyEffect: {fileID: 100024}
   moneyEffect: {fileID: 100012}
+  aboveZeroColor: {r: .694117665, g: .831372559, b: .419607848, a: 1}
+  belowZeroColor: {r: .996078432, g: .423529416, b: .423529416, a: 1}
 --- !u!114 &11400012
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -819,7 +821,7 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 16
+  mWidth: 12
   mHeight: 18
   mDepth: 0
   autoResizeBoxCollider: 0
@@ -1067,7 +1069,7 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 16
+  mWidth: 14
   mHeight: 16
   mDepth: 0
   autoResizeBoxCollider: 0
