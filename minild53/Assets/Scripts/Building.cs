@@ -30,7 +30,11 @@ public class BuildingLevel{
 		// TODO add leveluping
 		// send event?
 
-		if(onCompleted != null) onCompleted();
+		if (currentExp >= maxExp) {
+			if (onCompleted != null){
+				onCompleted ();
+			}
+		}
 	}
 
 	public float getCurrentExpFactor()

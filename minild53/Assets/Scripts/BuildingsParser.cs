@@ -22,7 +22,7 @@ public class BuildingsParser {
 		{
 			TaskEffect effect = new TaskEffect ();
 			effect.type = TaskEffectType.BuildingExpChange;
-			effect.amount = 10;
+			effect.amount = 50;
 
 			effects.Add(effect);
 		}

@@ -3515,7 +3515,7 @@ MonoBehaviour:
   thumb: {fileID: 0}
   mBG: {fileID: 1798929479}
   mFG: {fileID: 1699090755}
-  mValue: .25
+  mValue: 0
   mFill: 0
   numberOfSteps: 0
   onChange: []
@@ -3715,6 +3715,10 @@ Prefab:
     - target: {fileID: 11400000, guid: 7871e0482887d4d46be3b0a8434ea1dd, type: 2}
       propertyPath: aspectRatio
       value: .888888896
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: 7871e0482887d4d46be3b0a8434ea1dd, type: 2}
+      propertyPath: mValue
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7871e0482887d4d46be3b0a8434ea1dd, type: 2}
