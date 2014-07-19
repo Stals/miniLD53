@@ -22,7 +22,7 @@ public class BuildingsParser {
 		{
 			TaskEffect effect = new TaskEffect ();
 			effect.type = TaskEffectType.BuildingExpChange;
-			effect.amount = 10;
+			effect.amount = 50;
 
 			effects.Add(effect);
 		}
@@ -96,12 +96,12 @@ public class BuildingsParser {
 			{
 				BuildingLevel level = new BuildingLevel (100);
 				level.tasks = getFakeTasks (building);
-				building.levels.Add (level);
+				building.addLevel(level);
 			}
 			{
 				BuildingLevel level = new BuildingLevel (200);
 				level.tasks = getFakeTasks (building);
-				building.levels.Add (level);
+				building.addLevel(level);
 			}
 
 			buildings.Add(building);

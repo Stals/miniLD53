@@ -51,6 +51,7 @@ public class TaskContainer : MonoBehaviour {
 			return;
 		}
 		UILabel label = effect.GetComponentInChildren<UILabel> ();
+
 		label.text = taskEffect.getAmountString ();
 		if (taskEffect.amount < 0) {
 			label.color = belowZeroColor;
