@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class Age{
-	Age(int _years, int _months, int _weeks)
+	public Age(int _years, int _months, int _weeks)
 	{
 		years = _years;
 		months = _months;
@@ -40,6 +40,8 @@ public class Player {
 		energy = _energy;
 		maxEnergy = energy;
 		money = _money;
+
+		age = new Age (20, 1, 1);
 	}
 
 	public int energy { get; set; }

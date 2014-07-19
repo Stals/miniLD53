@@ -7,11 +7,14 @@ public class GuiUpdater : MonoBehaviour {
 	UILabel moneyLabel;
 
 	[SerializeField]
+	UILabel ageLabel;
+
+	[SerializeField]
 	UISlider energyBar;
 
 	Player player;
 
-	void onStart()
+	void Start()
 	{
 		player = Game.Instance.getPlayer ();
 	}
@@ -19,6 +22,8 @@ public class GuiUpdater : MonoBehaviour {
 	void OnGUI()
 	{
 		moneyLabel.text = moneyToString (Game.Instance.getPlayer ().money);
+
+		ageLabel.text = "Age: " + Game.Instance.getPlayer().age.asString ();
 	}
 
 	string moneyToString(int money)

@@ -21,5 +21,7 @@ public class TaskContainer : MonoBehaviour {
 			slider.value -= 1;
 		}
 		Game.Instance.getPlayer ().money += 50;
+		Game.Instance.getPlayer ().age.addWeek ();
+
 	}
 }
