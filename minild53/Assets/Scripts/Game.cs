@@ -27,8 +27,6 @@ public class Game  {
 		player = new Player(100, 0);
 		buildings = BuildingsParser.getBuildingsFromXML ();
 	}
-
-
 	
 	public Player getPlayer(){
 		return player;

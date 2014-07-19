@@ -10,6 +10,9 @@ public class Difficulty {
 	public List<TaskEffect> effects;
 
 	// 
-	//public getEffectsForLevel(int buildingLevel)
+	public List<TaskEffect> getEffectsForLevel(int buildingLevel)
+	{
+		return effects;
+	}
 
 }

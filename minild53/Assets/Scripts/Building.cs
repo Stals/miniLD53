@@ -10,6 +10,12 @@ public enum BuildingType{
 };
 
 public class BuildingLevel{
+	public BuildingLevel(int _maxExp)
+	{
+		currentExp = 0;
+		maxExp = _maxExp;
+	}
+
 	public int currentExp;
 	public int maxExp;
 
@@ -17,6 +23,12 @@ public class BuildingLevel{
 }
 
 public class Building {
+	public Building(BuildingType _type)
+	{
+		currentLevel = 1;
+		type = _type;
+	}
+
 	public int currentLevel { get; set; }
 	
 
