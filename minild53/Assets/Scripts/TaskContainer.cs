@@ -54,6 +54,11 @@ public class TaskContainer : MonoBehaviour {
 	
 	}
 
+	void OnGUI()
+	{
+		updateRequirenments (true);
+	}
+
 	public void updateData()
 	{
 		taskNameLabel.text = task.name;
@@ -80,7 +85,7 @@ public class TaskContainer : MonoBehaviour {
 		}
 	}
 
-	void updateRequirenments()
+	void updateRequirenments(bool onlyColor = false)
 	{
 		foreach (GameObject reqObject in requirenmentObjects) {
 			reqObject.SetActive(false);
@@ -89,18 +94,24 @@ public class TaskContainer : MonoBehaviour {
 		for(int i = 0; i < task.requirements.Count; ++i)
 		{
 			Requirement req = task.requirements[i];
-
 			GameObject reqObject = requirenmentObjects[i];
 			reqObject.SetActive(true);
 
 			UILabel lable = reqObject.GetComponentInChildren<UILabel>();
-			lable.text = string.Format("{0}", req.level);
 			if(req.isEnough()){
 				lable.color = new Color(255, 255, 255);
-
+				
 			}else{
 				lable.color = belowZeroColor;
 			}
+
+			if(onlyColor){
+				continue;
+			}
+			lable.text = string.Format("{0}", req.level);
+
+
+
 
 			UISprite sprite = reqObject.GetComponentInChildren<UISprite>();
 			sprite.spriteName = Requirement.getIconPath(req.type);
