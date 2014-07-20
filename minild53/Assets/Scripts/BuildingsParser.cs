@@ -94,9 +94,6 @@ public class BuildingsParser {
 		string diffuculty = node.SelectSingleNode("Effects").Attributes ["difficulty"].Value;
 		task.complitionEffects = getDifficultyByName (diffuculty).getEffectsForLevel (levelNum);
 
-
-		// TODO parse requirenments
-
 		task.requirements = new List<Requirement> ();
 		
 		XmlNodeList requirementsList = node.SelectSingleNode("Requirements").ChildNodes;

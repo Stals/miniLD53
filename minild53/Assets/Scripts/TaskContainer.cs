@@ -45,6 +45,8 @@ public class TaskContainer : MonoBehaviour {
 
 		updateEffect (energyEffect, task.getEffectByType (TaskEffectType.EnergyChange));
 		updateEffect (moneyEffect, task.getEffectByType (TaskEffectType.MoneyChange));
+
+		updateRequirenments ();
 	}
 
      public void updateEffect(GameObject effect, TaskEffect taskEffect)
@@ -62,6 +64,34 @@ public class TaskContainer : MonoBehaviour {
 			label.color = aboveZeroColor;
 		}
 	}
+
+	void updateRequirenments()
+	{
+		foreach (GameObject reqObject in requirenmentObjects) {
+			reqObject.SetActive(false);
+		}
+
+		for(int i = 0; i < task.requirements.Count; ++i)
+		{
+			Requirement req = task.requirements[i];
+
+			GameObject reqObject = requirenmentObjects[i];
+			reqObject.SetActive(true);
+
+			UILabel lable = reqObject.GetComponentInChildren<UILabel>();
+			lable.text = string.Format("{0}", req.level);
+			if(req.isEnough()){
+				lable.color = new Color(255, 255, 255);
+
+			}else{
+				lable.color = belowZeroColor;
+			}
+
+			UISprite sprite = reqObject.GetComponentInChildren<UISprite>();
+			sprite.spriteName = Requirement.getIconPath(req.type);
+		}
+	}
+
 
 	private bool enoughEnergy()
 	{

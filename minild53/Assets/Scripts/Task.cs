@@ -27,6 +27,11 @@ public class Requirement {
 		return "";
 	}
 
+	public bool isEnough()
+	{
+		return level >= Game.Instance.getBuildingByType (type).currentLevel;
+	}
+
 }
 
 public enum TaskEffectType{
