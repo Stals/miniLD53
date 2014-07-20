@@ -41,9 +41,13 @@
 			<Effect Type="Energy" Amount="5" />
 		</Difficulty>
     
+    <Difficulty Name="HomeRest2" >
+			<Effect Type="Energy" Amount="10" />
+		</Difficulty>
+    
     <Difficulty Name="RestForMoney" >
-			<Effect Type="Energy" Amount="8" />
-      <Effect Type="Money" Amount="-30" />
+			<Effect Type="Energy" Amount="20" />
+      <Effect Type="Money" Amount="-10" />
 		</Difficulty>
 
 		<Difficulty Name="HomeUpgrade1" >
@@ -53,6 +57,11 @@
     
     <Difficulty Name="HomeUpgrade2" >
 			<Effect Type="Money" Amount="-80" />
+			<Effect Type="Exp" Amount="50" />
+		</Difficulty>
+    
+    <Difficulty Name="HomeUpgrade3" >
+			<Effect Type="Money" Amount="-100" />
 			<Effect Type="Exp" Amount="50" />
 		</Difficulty>
     
@@ -147,7 +156,7 @@
 					</Task>
         </Tasks>
       </Level>
-      <Level ExpToLevel="1800">
+      <Level ExpToLevel="500">
         <Tasks>
           <Task Name="work on a Ph.D" >
 						<Requirements>
@@ -157,7 +166,7 @@
 					</Task>
         </Tasks>
       </Level>
-      <Level ExpToLevel="2500">
+      <Level ExpToLevel="800">
         <Tasks>
           <Task Name="research dark matter " >
 						<Requirements>
@@ -167,7 +176,7 @@
 					</Task>
         </Tasks>
       </Level>
-      <Level ExpToLevel="3500">
+      <Level ExpToLevel="1200">
         <Tasks>
           <Task Name="research galactic core" >
 						<Requirements>
@@ -614,7 +623,7 @@
 						<Requirements >
               <Requirement Type="Home" Level="7" />
             </Requirements>
-						<Effects difficulty="HomeUpgrade2" />
+						<Effects difficulty="HomeUpgrade3" />
 					</Task>
 				</Tasks>
 			</Level>
@@ -624,13 +633,13 @@
 						<Requirements >
               <Requirement Type="Home" Level="8" />
             </Requirements>
-						<Effects difficulty="HomeRest" />
+						<Effects difficulty="HomeRest2" />
 					</Task>
 					<Task Name="save for penthouse" >
 						<Requirements >
               <Requirement Type="Home" Level="8" />
             </Requirements>
-						<Effects difficulty="HomeUpgrade2" />
+						<Effects difficulty="HomeUpgrade3" />
 					</Task>
 				</Tasks>
 			</Level>
@@ -640,7 +649,7 @@
 						<Requirements >
               <Requirement Type="Home" Level="8" />
             </Requirements>
-						<Effects difficulty="HomeRest" />
+						<Effects difficulty="HomeRest2" />
 					</Task>
         </Tasks>
 			</Level>
