@@ -20,6 +20,9 @@ public class TaskContainer : MonoBehaviour {
 	[SerializeField]
 	Color belowZeroColor;
 
+	[SerializeField]
+	GameObject[] requirenmentObjects;
+
 	// TODO use and give stuff from here
 
 

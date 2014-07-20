@@ -88,14 +88,32 @@ public class BuildingsParser {
 	{
 		Task task = new Task (building);
 		task.name = node.Attributes ["Name"].Value;
-		//task.requirements
+
+
+		// parse effects
+		string diffuculty = node.SelectSingleNode("Effects").Attributes ["difficulty"].Value;
+		task.complitionEffects = getDifficultyByName (diffuculty).getEffectsForLevel (levelNum);
+
 
 		// TODO parse requirenments
 
-		string diffuculty = node.LastChild.Attributes ["difficulty"].Value;
-		task.complitionEffects = getDifficultyByName (diffuculty).getEffectsForLevel (levelNum);
+		task.requirements = new List<Requirement> ();
+		
+		XmlNodeList requirementsList = node.SelectSingleNode("Requirements").ChildNodes;
+		foreach (XmlNode requirementkNode in requirementsList) {
+			Requirement requirement = parseRequirement (requirementkNode);
+			task.requirements.Add (requirement);
+		}
 
 		return task;
+	}
+
+	private static Requirement parseRequirement(XmlNode node)
+	{
+		Requirement requirement = new Requirement ();
+		requirement.type = Building.typeFromString (node.Attributes ["Type"].Value);
+		requirement.level = int.Parse (node.Attributes ["Level"].Value);
+		return requirement;
 	}
 
 		/*
