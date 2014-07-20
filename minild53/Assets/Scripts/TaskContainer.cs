@@ -179,7 +179,7 @@ public class TaskContainer : MonoBehaviour {
 
 
 		bool fullyCompleted = false;
-		slider.value = slider.value + 0.1f;
+		slider.value = slider.value + 0.2f;
 		if(slider.value >= 1){
 			slider.value -= 1;
 
