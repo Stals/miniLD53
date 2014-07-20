@@ -22,7 +22,7 @@
 						</Requirements>
 						<Effects difficulty="Easy" />
 					</Task>
-					<Task Name="do research" >
+					<Task Name="rest test" >
 						<Requirements>
 							<Requirement Type="Science" Level="1" />
 						</Requirements>

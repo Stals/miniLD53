@@ -17,7 +17,7 @@ public class BuildingsParser {
 		return null;
 	}
 
-	public static List<TaskEffect> getEffects(XmlNodeList effectsNode)
+	private static List<TaskEffect> getEffects(XmlNodeList effectsNode)
 	{
 		List<TaskEffect> effects = new List<TaskEffect>();
 		foreach (XmlNode effectNode in effectsNode) {
@@ -31,38 +31,9 @@ public class BuildingsParser {
 
 		return effects;
 	}
+	
 
-	public static List<TaskEffect> getFakeEffects()
-	{
-		List<TaskEffect> effects = new List<TaskEffect>();
-		{
-			TaskEffect effect = new TaskEffect ();
-			effect.type = TaskEffectType.BuildingExpChange;
-			effect.amount = 50;
-
-			effects.Add(effect);
-		}
-
-		{
-			TaskEffect effect = new TaskEffect ();
-			effect.type = TaskEffectType.EnergyChange;
-			effect.amount = -5;
-			
-			effects.Add(effect);
-		}
-
-		{
-			TaskEffect effect = new TaskEffect ();
-			effect.type = TaskEffectType.MoneyChange;
-			effect.amount = 10;
-			
-			effects.Add(effect);
-		}
-
-		return effects;
-	}
-
-	public static List<Difficulty> getDifficultiesFromXML(XmlNode node)
+	private static List<Difficulty> getDifficultiesFromXML(XmlNode node)
 	{
 		List<Difficulty> difficulties = new List<Difficulty>();
 
@@ -78,7 +49,7 @@ public class BuildingsParser {
 	}
 
 
-	public static List<Task> getFakeTasks(Building building)
+	private static List<Task> getFakeTasks(Building building)
 	{
 		List<Task> tasks = new List<Task> ();
 
@@ -101,20 +72,77 @@ public class BuildingsParser {
 		return tasks;
 	}
 
-	public static List<Building> getBuildingsFromXML()
+	private static List<Building> getBuildingsFromXML(XmlNode buildingsNode)
+	{
+		List<Building> buildings = new List<Building> ();
+
+		XmlNodeList list = buildingsNode.ChildNodes;
+		foreach (XmlNode buildingNode in list) {
+
+			Building building = new Building (Building.typeFromString(buildingNode.Attributes["Type"].Value));
+			building.levels = new List<BuildingLevel> ();
+
+			foreach(XmlNode buildingLevelNode in buildingNode.ChildNodes){
+				BuildingLevel level = parseLevel(buildingLevelNode, building);
+				building.addLevel(level);
+			}
+			buildings.Add(building);
+		}
+		return buildings;
+	}
+
+	private static BuildingLevel parseLevel(XmlNode node, Building building)
+	{
+		BuildingLevel level = new BuildingLevel (int.Parse (node.Attributes ["ExpToLevel"].Value));
+
+		level.tasks = new List<Task> ();
+
+		XmlNodeList tasksList = node.ChildNodes [0].ChildNodes;
+		foreach (XmlNode taskNode in tasksList) {
+			Task task = parseTask (taskNode, building);
+			level.tasks.Add (task);
+		}
+		return level;
+	}
+
+	private static Task parseTask(XmlNode node, Building building)
+	{
+		Task task = new Task (building);
+		task.name = node.Attributes ["Name"].Value;
+		//task.requirements
+
+		// TODO parse requirenments
+		// TODO pass different levels
+
+		string diffuculty = node.LastChild.Attributes ["difficulty"].Value;
+		task.complitionEffects = getDifficultyByName (diffuculty).getEffectsForLevel (1);
+
+		return task;
+	}
+
+		/*
+
+			<Task Name="do research" >
+				<Requirements>
+				<Requirement Type="Science" Level="2" />
+				<Requirement Type="Criminal" Level="2" />
+				</Requirements>
+				<Effects difficulty="Easy" />
+				
+				return null;
+				*/
+
+	
+	public static List<Building> getBuildings()
 	{
 		XmlDocument xmlDoc = new XmlDocument(); // xmlDoc is the new xml document.
 		xmlDoc.Load("Assets/data/buildings.xml"); // load the file.
 		XmlNode diffNode = xmlDoc.GetElementsByTagName("Difficulties")[0];
+		difficulties = getDifficultiesFromXML (xmlDoc.GetElementsByTagName("Difficulties")[0]);
 
-		//XmlNodeList levelsList = xmlDoc.GetElementsByTagName("Difficulties")[0];
-
-
-		difficulties = getDifficultiesFromXML (diffNode);
-
-		List<Building> buildings = new List<Building>();
-
-		{
+		List<Building> buildings = getBuildingsFromXML (xmlDoc.GetElementsByTagName ("Buildings") [0]);
+		
+			/*{
 			Building building = new Building (BuildingType.Science);
 			building.levels = new List<BuildingLevel> ();
 
@@ -148,7 +176,7 @@ public class BuildingsParser {
 			}
 
 			buildings.Add(building);
-		}
+		}*/
 
 		return buildings;
 	}

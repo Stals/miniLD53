@@ -6,7 +6,8 @@ public enum BuildingType{
 	Wackdonalds,
 	Science,
 	Criminal,
-	Home
+	Home,
+	Unknown
 };
 
 // TODO get icon for building type
@@ -79,5 +80,22 @@ public class Building {
 	{
 		currentLevel += 1;
 		if(onCompleted != null) onCompleted();
+	}
+
+	public static BuildingType typeFromString(string str)
+	{
+		if (str == "Wackdonalds") {
+			return BuildingType.Wackdonalds;
+		}
+		if (str == "Science") {
+			return BuildingType.Science;
+		}
+		if (str == "Criminal"){
+			return BuildingType.Criminal;
+		}
+		if (str == "Home"){
+			return BuildingType.Home;
+		}
+		return BuildingType.Unknown;
 	}
 }
