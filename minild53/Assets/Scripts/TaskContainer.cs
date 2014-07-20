@@ -66,7 +66,7 @@ public class TaskContainer : MonoBehaviour {
 
 		if(effect != null){
 			if(effect.amount < 0){
-				return Game.Instance.getPlayer().energy >= effect.amount;
+				return Game.Instance.getPlayer().energy >= (-1 * effect.amount);
 			}
 		}
 
@@ -79,7 +79,7 @@ public class TaskContainer : MonoBehaviour {
 		
 		if(effect != null){
 			if(effect.amount < 0){
-				return Game.Instance.getPlayer().money >= effect.amount;
+				return Game.Instance.getPlayer().money >= (-1 * effect.amount);
 			}
 
 		}
