@@ -9,6 +9,8 @@ public class BankContainer : MonoBehaviour {
 	[SerializeField]
 	UILabel currentMoneyLabel;
 
+	[SerializeField]
+	GameObject toStarsButton;
 	
 
 	// Use this for initialization
@@ -31,5 +33,9 @@ public class BankContainer : MonoBehaviour {
 		depositSlider.value = (float)Game.Instance.getPlayer().money / Game.Instance.getPlayer().maxMoney;
 
 		currentMoneyLabel.text = Game.Instance.getPlayer().money + " $";
+
+		if (Game.Instance.getPlayer ().money >= Game.Instance.getPlayer ().maxMoney) {
+			toStarsButton.SetActive(true);
+		}
 	}
 }

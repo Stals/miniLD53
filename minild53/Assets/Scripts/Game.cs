@@ -18,14 +18,14 @@ public class Game  {
 	}
 
 	Player player;
-	Bank bank;
+	//Bank bank;
 
 	List<Building> buildings;
 
 	public void init()
 	{
 		player = new Player(100, 0, 100000);
-		bank = new Bank (100000);
+		//bank = new Bank (100000);
 
 		buildings = BuildingsParser.getBuildings ();
 	}
