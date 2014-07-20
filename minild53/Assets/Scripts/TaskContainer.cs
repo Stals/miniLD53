@@ -119,12 +119,28 @@ public class TaskContainer : MonoBehaviour {
 		return true;
 	}
 
+	private bool enoughRequirenments()
+	{
+		foreach (Requirement req in task.requirements) {
+			if(!req.isEnough()){
+
+				return false;
+			}
+		}
+
+		return true;
+	}
+
 	public void increaseValue()
 	{
 		if (!enoughEnergy ()) {
 			return;		
 		}
 		if (!enoughMoney ()) {
+			return;
+		}
+
+		if (!enoughRequirenments ()) {
 			return;
 		}
 

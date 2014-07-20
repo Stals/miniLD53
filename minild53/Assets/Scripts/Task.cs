@@ -29,7 +29,7 @@ public class Requirement {
 
 	public bool isEnough()
 	{
-		return level >= Game.Instance.getBuildingByType (type).currentLevel;
+		return Game.Instance.getBuildingByType (type).currentLevel >= level; 
 	}
 
 }
