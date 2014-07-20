@@ -1,6 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+public enum ErrorType{
+	NoMoney,
+	NoEnergy,
+	NoRequirenments
+};
+
 // TODO этот же класс добавляет prefab что дается для отображения
 public class TaskContainer : MonoBehaviour {
 
@@ -22,6 +28,12 @@ public class TaskContainer : MonoBehaviour {
 
 	[SerializeField]
 	GameObject[] requirenmentObjects;
+
+	[SerializeField]
+	AudioSource clickSound;
+
+	[SerializeField]
+	AudioSource errorSound;
 
 	// TODO use and give stuff from here
 
@@ -89,6 +101,7 @@ public class TaskContainer : MonoBehaviour {
 
 			UISprite sprite = reqObject.GetComponentInChildren<UISprite>();
 			sprite.spriteName = Requirement.getIconPath(req.type);
+			// TODO snap sprite.
 		}
 	}
 
@@ -114,7 +127,6 @@ public class TaskContainer : MonoBehaviour {
 			if(effect.amount < 0){
 				return Game.Instance.getPlayer().money >= (-1 * effect.amount);
 			}
-
 		}
 		return true;
 	}
@@ -134,17 +146,20 @@ public class TaskContainer : MonoBehaviour {
 	public void increaseValue()
 	{
 		if (!enoughEnergy ()) {
-			return;		
+			handleError(this.gameObject, ErrorType.NoEnergy);
+			return;
 		}
 		if (!enoughMoney ()) {
+			handleError(this.gameObject, ErrorType.NoMoney);
 			return;
 		}
 
 		if (!enoughRequirenments ()) {
+			handleError(this.gameObject, ErrorType.NoRequirenments);
 			return;
 		}
 
-		playSound ();
+		playSound (clickSound);
 
 		Game.Instance.getPlayer ().age.addWeek ();
 
@@ -159,12 +174,19 @@ public class TaskContainer : MonoBehaviour {
 		applyTaskEffects (task, fullyCompleted);
 	}
 
-	private void playSound()
+	private void handleError(GameObject go, ErrorType type)
+	{
+		playSound (errorSound, false);
+	}
+
+	private void playSound(AudioSource asource, bool pitch = true)
 	{
 		//AudioSource audio = this.GetComponent<AudioSource> ();
 
-		audio.pitch = Random.Range(0.9f, 1.1f);
-		audio.Play();
+		if (pitch) {
+			asource.pitch = Random.Range (0.9f, 1.1f);
+		}
+		asource.Play();
 	}
 
 	public void applyTaskEffects(Task task, bool full)
