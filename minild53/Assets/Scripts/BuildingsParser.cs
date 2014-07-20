@@ -49,29 +49,6 @@ public class BuildingsParser {
 	}
 
 
-	private static List<Task> getFakeTasks(Building building)
-	{
-		List<Task> tasks = new List<Task> ();
-
-		{
-			Task task = new Task (building);
-			task.name = "research";
-			//task.requirements
-			task.complitionEffects = getDifficultyByName ("Easy").getEffectsForLevel (1);
-			tasks.Add(task);
-		}
-
-		{
-			Task task = new Task (building);
-			task.name = "discover";
-			//task.requirements
-			task.complitionEffects = getDifficultyByName ("Easy").getEffectsForLevel (1);
-			tasks.Add(task);
-		}
-
-		return tasks;
-	}
-
 	private static List<Building> getBuildingsFromXML(XmlNode buildingsNode)
 	{
 		List<Building> buildings = new List<Building> ();
@@ -114,7 +91,6 @@ public class BuildingsParser {
 		//task.requirements
 
 		// TODO parse requirenments
-		// TODO pass different levels
 
 		string diffuculty = node.LastChild.Attributes ["difficulty"].Value;
 		task.complitionEffects = getDifficultyByName (diffuculty).getEffectsForLevel (levelNum);
@@ -126,12 +102,11 @@ public class BuildingsParser {
 
 			<Task Name="do research" >
 				<Requirements>
-				<Requirement Type="Science" Level="2" />
-				<Requirement Type="Criminal" Level="2" />
-				</Requirements>
+					<Requirement Type="Science" Level="2" />
+					<Requirement Type="Criminal" Level="2" />
+					</Requirements>
 				<Effects difficulty="Easy" />
-				
-				return null;
+
 				*/
 
 	
@@ -148,42 +123,6 @@ public class BuildingsParser {
 		difficulties = getDifficultiesFromXML (xmlDoc.GetElementsByTagName("Difficulties")[0]);
 
 		List<Building> buildings = getBuildingsFromXML (xmlDoc.GetElementsByTagName ("Buildings") [0]);
-		
-			/*{
-			Building building = new Building (BuildingType.Science);
-			building.levels = new List<BuildingLevel> ();
-
-			{
-				BuildingLevel level = new BuildingLevel (100);
-				level.tasks = getFakeTasks (building);
-				building.addLevel(level);
-			}
-			{
-				BuildingLevel level = new BuildingLevel (200);
-				level.tasks = getFakeTasks (building);
-				building.addLevel(level);
-			}
-
-			buildings.Add(building);
-		}
-
-		{
-			Building building = new Building (BuildingType.Wackdonalds);
-			building.levels = new List<BuildingLevel> ();
-			
-			{
-				BuildingLevel level = new BuildingLevel (100);
-				level.tasks = getFakeTasks (building);
-				building.levels.Add (level);
-			}
-			{
-				BuildingLevel level = new BuildingLevel (200);
-				level.tasks = getFakeTasks (building);
-				building.levels.Add (level);
-			}
-
-			buildings.Add(building);
-		}*/
 
 		return buildings;
 	}
