@@ -42,50 +42,9 @@
 		</Difficulty>
 
 		<Difficulty Name="HomeUpgrade1" >
-			<Effect Type="Money" Amount="-100" />
+			<Effect Type="Money" Amount="-60" />
 			<Effect Type="Exp" Amount="50" />
 		</Difficulty>
-    
-    <Difficulty Name="HomeUpgrade2" >
-			<Effect Type="Money" Amount="-150" />
-			<Effect Type="Exp" Amount="50" />
-		</Difficulty>
-    
-    <Difficulty Name="HomeUpgrade3" >
-			<Effect Type="Money" Amount="-200" />
-			<Effect Type="Exp" Amount="50" />
-		</Difficulty>
-    
-    <Difficulty Name="HomeUpgrade4" >
-			<Effect Type="Money" Amount="-300" />
-			<Effect Type="Exp" Amount="50" />
-		</Difficulty>
-    
-    <Difficulty Name="HomeUpgrade5" >
-			<Effect Type="Money" Amount="-500" />
-			<Effect Type="Exp" Amount="50" />
-		</Difficulty>
-    
-    <Difficulty Name="HomeUpgrade6" >
-			<Effect Type="Money" Amount="-700" />
-			<Effect Type="Exp" Amount="50" />
-		</Difficulty>
-    
-    <Difficulty Name="HomeUpgrade7" >
-			<Effect Type="Money" Amount="-1000" />
-			<Effect Type="Exp" Amount="50" />
-		</Difficulty>
-    
-    <Difficulty Name="HomeUpgrade8" >
-			<Effect Type="Money" Amount="-1450" />
-			<Effect Type="Exp" Amount="50" />
-		</Difficulty>
-    
-    <Difficulty Name="HomeUpgrade9" >
-			<Effect Type="Money" Amount="-2500" />
-			<Effect Type="Exp" Amount="50" />
-		</Difficulty>
-    
     
 	</Difficulties>
 
@@ -236,7 +195,7 @@
 					</Task>
 				</Tasks>
 			</Level>
-			<Level ExpToLevel="120" >
+			<Level ExpToLevel="180" >
 				<Tasks>
 					<Task Name="wash the floor" >
 						<Requirements >
@@ -260,7 +219,7 @@
 					</Task>
 				</Tasks>
 			</Level>
-      <Level ExpToLevel="1200" >
+      <Level ExpToLevel="350" >
 				<Tasks>
 					<Task Name="clean tables" >
 						<Requirements >
@@ -431,7 +390,7 @@
 						<Requirements >
               <Requirement Type="Criminal" Level="4" />
             </Requirements>
-						<Effects difficulty="TooEasy" />
+						<Effects difficulty="VeryEasy" />
 					</Task>
           <Task Name="blackmail" >
 						<Requirements >
@@ -448,14 +407,14 @@
 						<Requirements >
               <Requirement Type="Criminal" Level="5" />
             </Requirements>
-						<Effects difficulty="TooEasy" />
+						<Effects difficulty="Medium" />
 					</Task>
           <Task Name="make drugs" >
 						<Requirements >
               <Requirement Type="Criminal" Level="5" />
               <Requirement Type="Science" Level="5" />
             </Requirements>
-						<Effects difficulty="TooEasy" />
+						<Effects difficulty="Easy" />
 					</Task>
 				</Tasks>
 			</Level>
@@ -465,14 +424,14 @@
 						<Requirements >
               <Requirement Type="Criminal" Level="6" />
             </Requirements>
-						<Effects difficulty="TooEasy" />
+						<Effects difficulty="Medium" />
 					</Task>
           <Task Name="blackhole money" >
 						<Requirements >
               <Requirement Type="Criminal" Level="6" />
               <Requirement Type="Science" Level="6" />
             </Requirements>
-						<Effects difficulty="TooEasy" />
+						<Effects difficulty="Easy" />
 					</Task>
 				</Tasks>
 			</Level>
@@ -482,7 +441,7 @@
 						<Requirements >
               <Requirement Type="Criminal" Level="7" />
             </Requirements>
-						<Effects difficulty="TooEasy" />
+						<Effects difficulty="Hard" />
 					</Task>
 				</Tasks>
 			</Level>
@@ -492,28 +451,28 @@
 						<Requirements >
               <Requirement Type="Criminal" Level="8" />
             </Requirements>
-						<Effects difficulty="TooEasy" />
+						<Effects difficulty="Hard" />
 					</Task>
           <Task Name=" manage own mafia" >
 						<Requirements >
               <Requirement Type="Criminal" Level="8" />
               <Requirement Type="Wackdonalds" Level="8" />
             </Requirements>
-						<Effects difficulty="TooEasy" />
+						<Effects difficulty="Hard" />
 					</Task>
           <Task Name="godfathering" >
 						<Requirements >
               <Requirement Type="Criminal" Level="8" />
               <Requirement Type="Home" Level="8" />
             </Requirements>
-						<Effects difficulty="TooEasy" />
+						<Effects difficulty="Medium" />
 					</Task>
           <Task Name="sell secrets" >
 						<Requirements >
               <Requirement Type="Criminal" Level="8" />
               <Requirement Type="Science" Level="8" />
             </Requirements>
-						<Effects difficulty="TooEasy" />
+						<Effects difficulty="Medium" />
 					</Task>
 				</Tasks>
 			</Level>
@@ -523,7 +482,7 @@
 						<Requirements >
               <Requirement Type="Criminal" Level="9" />
             </Requirements>
-						<Effects difficulty="TooEasy" />
+						<Effects difficulty="Easy" />
 					</Task>
           <Task Name="conquer the world" >
 						<Requirements >
@@ -562,7 +521,7 @@
 						<Requirements >
               <Requirement Type="Home" Level="2" />
             </Requirements>
-						<Effects difficulty="HomeUpgrade2" />
+						<Effects difficulty="HomeUpgrade1" />
 					</Task>
 				</Tasks>
 			</Level>
@@ -578,7 +537,7 @@
 						<Requirements >
               <Requirement Type="Home" Level="3" />
             </Requirements>
-						<Effects difficulty="HomeUpgrade3" />
+						<Effects difficulty="HomeUpgrade1" />
 					</Task>
 				</Tasks>
 			</Level>
@@ -594,7 +553,7 @@
 						<Requirements >
               <Requirement Type="Home" Level="4" />
             </Requirements>
-						<Effects difficulty="HomeUpgrade4" />
+						<Effects difficulty="HomeUpgrade1" />
 					</Task>
 				</Tasks>
 			</Level>
@@ -613,7 +572,7 @@
 					</Task>
 					<Task Name="save for kingsize bed" >
 						<Requirements Type="Home" Level="5"/>
-						<Effects difficulty="HomeUpgrade5" />
+						<Effects difficulty="HomeUpgrade1" />
 					</Task>
 				</Tasks>
 			</Level>
@@ -629,7 +588,7 @@
 						<Requirements >
               <Requirement Type="Home" Level="6" />
             </Requirements>
-						<Effects difficulty="HomeUpgrade6" />
+						<Effects difficulty="HomeUpgrade1" />
 					</Task>
 				</Tasks>
 			</Level>
@@ -645,7 +604,7 @@
 						<Requirements >
               <Requirement Type="Home" Level="7" />
             </Requirements>
-						<Effects difficulty="HomeUpgrade7" />
+						<Effects difficulty="HomeUpgrade1" />
 					</Task>
 				</Tasks>
 			</Level>
@@ -661,7 +620,7 @@
 						<Requirements >
               <Requirement Type="Home" Level="8" />
             </Requirements>
-						<Effects difficulty="HomeUpgrade8" />
+						<Effects difficulty="HomeUpgrade1" />
 					</Task>
 				</Tasks>
 			</Level>
