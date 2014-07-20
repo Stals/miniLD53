@@ -57,7 +57,7 @@
 		<Building Name="Home" Type="Home" >
 			<Level ExpToLevel="100" >
 				<Tasks>
-					<Task Name="Rest on a camp-cot" >
+					<Task Name="rest on a camp-cot" >
 						<Requirements />
 						<Effects difficulty="HomeRest" />
 					</Task>
@@ -69,7 +69,7 @@
 			</Level>
 			<Level ExpToLevel="300" >
 				<Tasks>
-					<Task Name="Rest on a sofa" >
+					<Task Name="rest on a sofa" >
 						<Requirements />
 						<Effects difficulty="HomeRest" />
 					</Task>
@@ -92,7 +92,7 @@
 			</Level>
 			<Level ExpToLevel="200" >
 				<Tasks>
-					<Task Name="Wash dishes" >
+					<Task Name="wash dishes" >
 						<Requirements />
 						<Effects difficulty="Easy" />
 					</Task>
