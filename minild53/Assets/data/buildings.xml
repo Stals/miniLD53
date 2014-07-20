@@ -9,6 +9,11 @@
 		<Difficulty Name="HomeRest" >
 			<Effect Type="Energy" Amount="5" />
 		</Difficulty>
+
+		<Difficulty Name="HomeUpgrade" >
+			<Effect Type="Money" Amount="-100" />
+			<Effect Type="Exp" Amount="50" />
+		</Difficulty>
 	</Difficulties>
 
 	<Buildings>
@@ -50,11 +55,46 @@
 		</Building>
 
 		<Building Name="Home" Type="Home" >
-			<Level ExpToLevel="50" >
+			<Level ExpToLevel="100" >
 				<Tasks>
 					<Task Name="Rest on a camp-cot" >
 						<Requirements />
 						<Effects difficulty="HomeRest" />
+					</Task>
+					<Task Name="upgrade home" >
+						<Requirements />
+						<Effects difficulty="HomeUpgrade" />
+					</Task>
+				</Tasks>
+			</Level>
+		</Building>
+
+		<Building Name="Wackdonalds" Type="Wackdonalds" >
+			<Level ExpToLevel="100" >
+				<Tasks>
+					<Task Name="wash the floor" >
+						<Requirements />
+						<Effects difficulty="Easy" />
+					</Task>
+				</Tasks>
+			</Level>
+			<Level ExpToLevel="200" >
+				<Tasks>
+					<Task Name="Wash dishes" >
+						<Requirements />
+						<Effects difficulty="Easy" />
+					</Task>
+				</Tasks>
+			</Level>
+		</Building>
+
+
+		<Building Name="Criminal" Type="Criminal" >
+			<Level ExpToLevel="100" >
+				<Tasks>
+					<Task Name="deliver a package" >
+						<Requirements />
+						<Effects difficulty="Easy" />
 					</Task>
 				</Tasks>
 			</Level>
