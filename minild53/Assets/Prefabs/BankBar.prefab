@@ -503,6 +503,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   depositSlider: {fileID: 11400002}
+  currentMoneyLabel: {fileID: 11400008}
 --- !u!114 &11400016
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -530,8 +531,16 @@ MonoBehaviour:
   onDeselect: []
   onClick: []
   onDoubleClick: []
-  onDragOver: []
-  onDragOut: []
+  onDragOver:
+  - mTarget: {fileID: 11400014}
+    mMethodName: startDeposit
+    mParameters: []
+    oneShot: 0
+  onDragOut:
+  - mTarget: {fileID: 11400014}
+    mMethodName: endDeposit
+    mParameters: []
+    oneShot: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
