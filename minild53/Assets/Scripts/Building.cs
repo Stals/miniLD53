@@ -20,10 +20,14 @@ public class BuildingLevel{
 	{
 		currentExp = 0;
 		maxExp = _maxExp;
+		addEnergy = 0;
 	}
 
 	public int currentExp;
 	public int maxExp;
+
+	// amount that is added to player energy on levelup
+	public int addEnergy;
 
 	public void addExp(int exp)
 	{
@@ -36,6 +40,8 @@ public class BuildingLevel{
 		// send event?
 
 		if (currentExp >= maxExp) {
+			Game.Instance.getPlayer().maxEnergy += addEnergy;
+
 			if (onCompleted != null){
 				onCompleted ();
 			}

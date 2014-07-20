@@ -74,6 +74,11 @@ public class BuildingsParser {
 	{
 		BuildingLevel level = new BuildingLevel (int.Parse (node.Attributes ["ExpToLevel"].Value));
 
+		XmlAttribute addEnergyAttr = node.Attributes ["AddEnergy"];
+		if(addEnergyAttr != null){
+			level.addEnergy = int.Parse(addEnergyAttr.Value);
+		}
+
 		level.tasks = new List<Task> ();
 
 		XmlNodeList tasksList = node.ChildNodes [0].ChildNodes;
