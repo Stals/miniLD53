@@ -118,8 +118,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -301, z: 0}
-  m_LocalScale: {x: 1.00007999, y: 1.00007999, z: 1.00007999}
+  m_LocalPosition: {x: 56, y: -241, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400004}
   - {fileID: 400000}
@@ -147,7 +147,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100006}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 45.0400009, y: 1, z: 0}
+  m_LocalPosition: {x: 51, y: -4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400002}
@@ -159,7 +159,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100008}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -16, y: -5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400002}
@@ -184,9 +184,9 @@ AudioSource:
   m_GameObject: {fileID: 100002}
   m_Enabled: 1
   serializedVersion: 3
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 0d3917798d3b2b544b8b22b32032c33f, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: .5
+  m_Volume: .600000024
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -264,13 +264,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 16
-  mHeight: 18
+  mWidth: 12
+  mHeight: 12
   mDepth: 6
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: .888888896
+  aspectRatio: 1
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -282,7 +282,7 @@ MonoBehaviour:
   bottomType: 1
   topType: 1
   mAtlas: {fileID: 11400000, guid: 09805d5046aed4339917ef58c58b503a, type: 2}
-  mSpriteName: icon_science
+  mSpriteName: icon_home
   mFillCenter: 1
 --- !u!114 &11400002
 MonoBehaviour:
@@ -422,7 +422,7 @@ MonoBehaviour:
   progressSlider: {fileID: 11400004}
   tintableWidget: {fileID: 11400006}
   levelLabel: {fileID: 11400010}
-  buildingColor: {r: 0, g: 0, b: 0, a: 0}
+  buildingColor: {r: .654411793, g: .446805298, b: 0, a: 1}
 --- !u!114 &11400010
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -462,9 +462,9 @@ MonoBehaviour:
   aspectRatio: 4.9000001
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
-  mFont: {fileID: 11400000, guid: f54b5729c80c8476baed9c7abcf51eed, type: 2}
+  mFont: {fileID: 11400000, guid: 8786835d9e38f4d1188aae2882911932, type: 2}
   mText: level 1
-  mFontSize: 34
+  mFontSize: 30
   mFontStyle: 1
   mAlignment: 3
   mEncoding: 1
@@ -524,9 +524,9 @@ MonoBehaviour:
   aspectRatio: 4.9000001
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
-  mFont: {fileID: 11400000, guid: f54b5729c80c8476baed9c7abcf51eed, type: 2}
-  mText: Science
-  mFontSize: 34
+  mFont: {fileID: 11400000, guid: 8786835d9e38f4d1188aae2882911932, type: 2}
+  mText: HOME
+  mFontSize: 42
   mFontStyle: 1
   mAlignment: 1
   mEncoding: 1

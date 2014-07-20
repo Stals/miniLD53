@@ -93,6 +93,19 @@ MonoBehaviour:
     paddingRight: 42
     paddingTop: 0
     paddingBottom: 845
+  - name: font
+    x: 0
+    y: 914
+    width: 148
+    height: 506
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 2
+    paddingRight: 2
+    paddingTop: 2
+    paddingBottom: 2
   - name: icon_criminal
     x: 2008
     y: 1918
@@ -198,19 +211,6 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: small_bar_empty
-    x: 2028
-    y: 1958
-    width: 17
-    height: 21
-    borderLeft: 8
-    borderRight: 8
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-  - name: small_bar_full
     x: 2008
     y: 1934
     width: 17
@@ -223,9 +223,22 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
-  - name: small_bar_science
+  - name: small_bar_full
     x: 2026
     y: 1934
+    width: 17
+    height: 21
+    borderLeft: 8
+    borderRight: 8
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: small_bar_science
+    x: 2028
+    y: 1958
     width: 17
     height: 21
     borderLeft: 8
