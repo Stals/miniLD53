@@ -71,6 +71,7 @@
      <Compile Include="Assets\Scripts\Building.cs" />
      <Compile Include="Assets\Scripts\BuildingContainer.cs" />
      <Compile Include="Assets\Scripts\BuildingsParser.cs" />
+     <Compile Include="Assets\Scripts\DialogController.cs" />
      <Compile Include="Assets\Scripts\Difficulty.cs" />
      <Compile Include="Assets\Scripts\EnergyController.cs" />
      <Compile Include="Assets\Scripts\Game.cs" />
