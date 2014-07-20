@@ -6,9 +6,11 @@ public class BankContainer : MonoBehaviour {
 	[SerializeField]
 	UISlider depositSlider;
 
+	bool isDepositing;
+
 	// Use this for initialization
 	void Start () {
-	
+		isDepositing = false;
 	}
 	
 	// Update is called once per frame
@@ -18,5 +20,18 @@ public class BankContainer : MonoBehaviour {
 
 	void OnGUI()
 	{
+		if (isDepositing) {
+			depositSlider.value = depositSlider.value + 0.001f;
+		}
+	}
+
+	public void startDeposit()
+	{
+		isDepositing = true;
+	}
+
+	public void endDeposit()
+	{
+		isDepositing = false;
 	}
 }
