@@ -61,8 +61,8 @@ MonoBehaviour:
     height: 37
     borderLeft: 7
     borderRight: 7
-    borderTop: 0
-    borderBottom: 0
+    borderTop: 13
+    borderBottom: 13
     paddingLeft: 0
     paddingRight: 0
     paddingTop: 0
@@ -74,8 +74,8 @@ MonoBehaviour:
     height: 37
     borderLeft: 7
     borderRight: 7
-    borderTop: 0
-    borderBottom: 0
+    borderTop: 13
+    borderBottom: 13
     paddingLeft: 0
     paddingRight: 0
     paddingTop: 0
