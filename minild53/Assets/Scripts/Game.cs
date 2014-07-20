@@ -24,7 +24,7 @@ public class Game  {
 
 	public void init()
 	{
-		player = new Player(100, 0, 100000);
+		player = new Player(100, 0, 50000);
 		//bank = new Bank (100000);
 
 		buildings = BuildingsParser.getBuildings ();
