@@ -126,7 +126,9 @@
 			<Level ExpToLevel="200" >
 				<Tasks>
 					<Task Name="wash the floor" >
-						<Requirements Type="Wackdonalds" Level="2"/>
+						<Requirements >
+              <Requirement Type="Wackdonalds" Level="2" />
+            </Requirements>
 						<Effects difficulty="Easy" />
 					</Task>
 				</Tasks>
@@ -134,7 +136,9 @@
       <Level ExpToLevel="200" >
 				<Tasks>
 					<Task Name="clean tables" >
-						<Requirements Type="Wackdonalds" Level="3"/>
+						<Requirements >
+              <Requirement Type="Wackdonalds" Level="3" />
+            </Requirements>
 						<Effects difficulty="Easy" />
 					</Task>
 				</Tasks>
@@ -142,7 +146,9 @@
       <Level ExpToLevel="200" >
 				<Tasks>
 					<Task Name="bring food" >
-						<Requirements Type="Wackdonalds" Level="4"/>
+						<Requirements >
+              <Requirement Type="Wackdonalds" Level="4" />
+            </Requirements>
 						<Effects difficulty="Easy" />
 					</Task>
 				</Tasks>
@@ -150,7 +156,9 @@
       <Level ExpToLevel="200" >
 				<Tasks>
 					<Task Name="help boss" >
-						<Requirements Type="Wackdonalds" Level="5"/>
+						<Requirements >
+              <Requirement Type="Wackdonalds" Level="5" />
+            </Requirements>
 						<Effects difficulty="Easy" />
 					</Task>
 				</Tasks>
@@ -158,7 +166,9 @@
       <Level ExpToLevel="200" >
 				<Tasks>
 					<Task Name="manage WackD branch" >
-						<Requirements Type="Wackdonalds" Level="6"/>
+						<Requirements >
+              <Requirement Type="Wackdonalds" Level="6" />
+            </Requirements>
 						<Effects difficulty="Easy" />
 					</Task>
 				</Tasks>
@@ -166,7 +176,9 @@
       <Level ExpToLevel="200" >
 				<Tasks>
 					<Task Name="work in head office" >
-						<Requirements Type="Wackdonalds" Level="7"/>
+						<Requirements >
+              <Requirement Type="Wackdonalds" Level="7" />
+            </Requirements>
 						<Effects difficulty="Easy" />
 					</Task>
 				</Tasks>
@@ -174,7 +186,9 @@
       <Level ExpToLevel="200" >
 				<Tasks>
 					<Task Name="seat at meetings" >
-						<Requirements Type="Wackdonalds" Level="8"/>
+						<Requirements >
+              <Requirement Type="Wackdonalds" Level="8" />
+            </Requirements>
 						<Effects difficulty="Easy" />
 					</Task>
 				</Tasks>
@@ -182,7 +196,9 @@
       <Level ExpToLevel="-1" >
 				<Tasks>
 					<Task Name="do nothing" >
-						<Requirements Type="Wackdonalds" Level="9"/>
+						<Requirements >
+              <Requirement Type="Wackdonalds" Level="9" />
+            </Requirements>
 						<Effects difficulty="Easy" />
 					</Task>
 				</Tasks>
@@ -192,7 +208,7 @@
 		<Building Name="Criminal" Type="Criminal" >
 			<Level ExpToLevel="100" >
 				<Tasks>
-					<Task Name="deliver a package" >
+					<Task Name="pickpocket" >
 						<Requirements />
 						<Effects difficulty="Easy" />
 					</Task>
@@ -200,8 +216,80 @@
 			</Level>
 			<Level ExpToLevel="200" >
 				<Tasks>
-					<Task Name="sell stuff" >
-						<Requirements />
+					<Task Name="street showdown" >
+            <Requirements >
+              <Requirement Type="Criminal" Level="2" />
+            </Requirements>
+						<Effects difficulty="Easy" />
+					</Task>
+				</Tasks>
+			</Level>
+      <Level ExpToLevel="200" >
+				<Tasks>
+					<Task Name="totalizatoring " >
+						<Requirements >
+              <Requirement Type="Criminal" Level="3" />
+            </Requirements>
+						<Effects difficulty="Easy" />
+					</Task>
+				</Tasks>
+			</Level>
+      <Level ExpToLevel="200" >
+				<Tasks>
+					<Task Name="deliver package" >
+						<Requirements >
+              <Requirement Type="Criminal" Level="4" />
+            </Requirements>
+						<Effects difficulty="Easy" />
+					</Task>
+				</Tasks>
+			</Level>
+      <Level ExpToLevel="200" >
+				<Tasks>
+					<Task Name="collect debts" >
+						<Requirements >
+              <Requirement Type="Criminal" Level="5" />
+            </Requirements>
+						<Effects difficulty="Easy" />
+					</Task>
+				</Tasks>
+			</Level>
+      <Level ExpToLevel="200" >
+				<Tasks>
+					<Task Name="kidnap" >
+						<Requirements >
+              <Requirement Type="Criminal" Level="6" />
+            </Requirements>
+						<Effects difficulty="Easy" />
+					</Task>
+				</Tasks>
+			</Level>
+      <Level ExpToLevel="200" >
+				<Tasks>
+					<Task Name="kill people" >
+						<Requirements >
+              <Requirement Type="Criminal" Level="7" />
+            </Requirements>
+						<Effects difficulty="Easy" />
+					</Task>
+				</Tasks>
+			</Level>
+      <Level ExpToLevel="200" >
+				<Tasks>
+					<Task Name="serious business" >
+						<Requirements >
+              <Requirement Type="Criminal" Level="8" />
+            </Requirements>
+						<Effects difficulty="Easy" />
+					</Task>
+				</Tasks>
+			</Level>
+      <Level ExpToLevel="200" >
+				<Tasks>
+					<Task Name="smoke cigars" >
+						<Requirements >
+              <Requirement Type="Criminal" Level="9" />
+            </Requirements>
 						<Effects difficulty="Easy" />
 					</Task>
 				</Tasks>
@@ -213,31 +301,141 @@
 			<Level ExpToLevel="100" >
 				<Tasks>
 					<Task Name="rest on a camp-cot" >
-						<Requirements />
+            <Requirements />
 						<Effects difficulty="HomeRest" />
 					</Task>
-					<Task Name="upgrade home" >
+					<Task Name="save for armchair" >
 						<Requirements />
 						<Effects difficulty="HomeUpgrade" />
 					</Task>
 				</Tasks>
 			</Level>
-			<Level ExpToLevel="300" >
+      <Level ExpToLevel="100" >
 				<Tasks>
-					<Task Name="rest on a sofa" >
-						<Requirements />
+					<Task Name="rest in the armchair" >
+						<Requirements >
+              <Requirement Type="Home" Level="2" />
+            </Requirements>
 						<Effects difficulty="HomeRest" />
 					</Task>
-					<Task Name="upgrade home" >
-						<Requirements />
+					<Task Name="save for sofa" >
+						<Requirements >
+              <Requirement Type="Home" Level="2" />
+            </Requirements>
 						<Effects difficulty="HomeUpgrade" />
 					</Task>
 				</Tasks>
 			</Level>
+      <Level ExpToLevel="100" >
+				<Tasks>
+					<Task Name="rest on sofa" >
+						<Requirements >
+              <Requirement Type="Home" Level="3" />
+            </Requirements>
+						<Effects difficulty="HomeRest" />
+					</Task>
+					<Task Name="save for HD TV" >
+						<Requirements >
+              <Requirement Type="Home" Level="3" />
+            </Requirements>
+						<Effects difficulty="HomeUpgrade" />
+					</Task>
+				</Tasks>
+			</Level>
+      <Level ExpToLevel="100" >
+				<Tasks>
+					<Task Name="watch hd tv" >
+						<Requirements >
+              <Requirement Type="Home" Level="4" />
+            </Requirements>
+						<Effects difficulty="HomeRest" />
+					</Task>
+					<Task Name="save for appartaments" >
+						<Requirements >
+              <Requirement Type="Home" Level="4" />
+            </Requirements>
+						<Effects difficulty="HomeUpgrade" />
+					</Task>
+				</Tasks>
+			</Level>
+      <Level ExpToLevel="100" >
+				<Tasks>
+					<Task Name="rest in appartaments" >
+						<Requirements Type="Home" Level="5"/>
+						<Effects difficulty="HomeRest" />
+					</Task>
+          <Task Name=" rest for money" >
+						<Requirements >
+              <Requirement Type="Home" Level="5" />
+              <Requirements Type="Criminal" Level="5"/>
+            </Requirements>
+						<Effects difficulty="HomeRest" />
+					</Task>
+					<Task Name="save for kingsize bed" >
+						<Requirements Type="Home" Level="5"/>
+						<Effects difficulty="HomeUpgrade" />
+					</Task>
+				</Tasks>
+			</Level>
+      <Level ExpToLevel="100" >
+				<Tasks>
+					<Task Name="rest in kingsize bed" >
+						<Requirements >
+              <Requirement Type="Home" Level="6" />
+            </Requirements>
+						<Effects difficulty="HomeRest" />
+					</Task>
+					<Task Name="save for personal gym" >
+						<Requirements >
+              <Requirement Type="Home" Level="6" />
+            </Requirements>
+						<Effects difficulty="HomeUpgrade" />
+					</Task>
+				</Tasks>
+			</Level>
+      <Level ExpToLevel="100" >
+				<Tasks>
+					<Task Name="workout in personal gym" >
+						<Requirements >
+              <Requirement Type="Home" Level="7" />
+            </Requirements>
+						<Effects difficulty="HomeRest" />
+					</Task>
+					<Task Name="save for lamborghini" >
+						<Requirements >
+              <Requirement Type="Home" Level="7" />
+            </Requirements>
+						<Effects difficulty="HomeUpgrade" />
+					</Task>
+				</Tasks>
+			</Level>
+      <Level ExpToLevel="100" >
+				<Tasks>
+					<Task Name="ride the lamborghini" >
+						<Requirements >
+              <Requirement Type="Home" Level="8" />
+            </Requirements>
+						<Effects difficulty="HomeRest" />
+					</Task>
+					<Task Name="save for penthouse" >
+						<Requirements >
+              <Requirement Type="Home" Level="8" />
+            </Requirements>
+						<Effects difficulty="HomeUpgrade" />
+					</Task>
+				</Tasks>
+			</Level>
+      <Level ExpToLevel="-1" >
+				<Tasks>
+					<Task Name="rest in the penthouse" >
+						<Requirements >
+              <Requirement Type="Home" Level="8" />
+            </Requirements>
+						<Effects difficulty="HomeRest" />
+					</Task>
+        </Tasks>
+			</Level>
+      
 		</Building>
 	</Buildings>
-    
-		
-
-
 </root>
