@@ -1,43 +1,116 @@
 <root>
 	<Difficulties>
-		<Difficulty Name="Easy" >
-			<Effect Type="Exp" Amount="50" />
-			<Effect Type="Money" Amount="75" />
+    <Difficulty Name="TooEasy" >
+			<Effect Type="Exp" Amount="60" />
+			<Effect Type="Money" Amount="60" />
 			<Effect Type="Energy" Amount="-5" />
 		</Difficulty>
+  
+    <Difficulty Name="VeryEasy" >
+			<Effect Type="Exp" Amount="40" />
+			<Effect Type="Money" Amount="50" />
+			<Effect Type="Energy" Amount="-10" />
+		</Difficulty>
+    
+		<Difficulty Name="Easy" >
+			<Effect Type="Exp" Amount="30" />
+			<Effect Type="Money" Amount="40" />
+			<Effect Type="Energy" Amount="-15" />
+		</Difficulty>
+    
+    <Difficulty Name="Medium" >
+			<Effect Type="Exp" Amount="30" />
+			<Effect Type="Money" Amount="30" />
+			<Effect Type="Energy" Amount="-20" />
+		</Difficulty>
+    
+    <Difficulty Name="Hard" >
+			<Effect Type="Exp" Amount="40" />
+			<Effect Type="Money" Amount="20" />
+			<Effect Type="Energy" Amount="-40" />
+		</Difficulty>
+    
+    <Difficulty Name="UltraHard" >
+			<Effect Type="Exp" Amount="50" />
+			<Effect Type="Money" Amount="10" />
+			<Effect Type="Energy" Amount="-50" />
+		</Difficulty>
 
+    
 		<Difficulty Name="HomeRest" >
 			<Effect Type="Energy" Amount="5" />
 		</Difficulty>
 
-		<Difficulty Name="HomeUpgrade" >
-			<Effect Type="Money" Amount="-100" />
+		<Difficulty Name="HomeUpgrade1" >
+			<Effect Type="Money" Amount="-30" />
 			<Effect Type="Exp" Amount="50" />
 		</Difficulty>
+    
+    <Difficulty Name="HomeUpgrade2" >
+			<Effect Type="Money" Amount="-60" />
+			<Effect Type="Exp" Amount="50" />
+		</Difficulty>
+    
+    <Difficulty Name="HomeUpgrade3" >
+			<Effect Type="Money" Amount="-80" />
+			<Effect Type="Exp" Amount="50" />
+		</Difficulty>
+    
+    <Difficulty Name="HomeUpgrade4" >
+			<Effect Type="Money" Amount="-120" />
+			<Effect Type="Exp" Amount="50" />
+		</Difficulty>
+    
+    <Difficulty Name="HomeUpgrade5" >
+			<Effect Type="Money" Amount="-180" />
+			<Effect Type="Exp" Amount="50" />
+		</Difficulty>
+    
+    <Difficulty Name="HomeUpgrade6" >
+			<Effect Type="Money" Amount="-250" />
+			<Effect Type="Exp" Amount="50" />
+		</Difficulty>
+    
+    <Difficulty Name="HomeUpgrade7" >
+			<Effect Type="Money" Amount="-350" />
+			<Effect Type="Exp" Amount="50" />
+		</Difficulty>
+    
+    <Difficulty Name="HomeUpgrade8" >
+			<Effect Type="Money" Amount="-450" />
+			<Effect Type="Exp" Amount="50" />
+		</Difficulty>
+    
+    <Difficulty Name="HomeUpgrade9" >
+			<Effect Type="Money" Amount="-550" />
+			<Effect Type="Exp" Amount="50" />
+		</Difficulty>
+    
+    
 	</Difficulties>
 
   
   
 	<Buildings>
 		<Building Name="UNIVERSITY" Type="Science" >
-			<Level ExpToLevel="100">
+			<Level ExpToLevel="50">
 				<Tasks>
 					<Task Name="clean test-tubes" >
 						<Requirements>
 							<Requirement Type="Science" Level="1" />
 						</Requirements>
-						<Effects difficulty="Easy" />
+						<Effects difficulty="VeryEasy" />
 					</Task>
           <Task Name="sell rare materials" >
 						<Requirements>
 							<Requirement Type="Science" Level="1" />
               <Requirement Type="Criminal" Level="2" />
 						</Requirements>
-						<Effects difficulty="Easy" />
+						<Effects difficulty="TooEasy" />
 					</Task>
 				</Tasks>
 			</Level>
-			<Level ExpToLevel="200">
+			<Level ExpToLevel="100">
 				<Tasks>
 					<Task Name="read books" >
 						<Requirements>
@@ -45,33 +118,33 @@
 						</Requirements>
 						<Effects difficulty="Easy" />
 					</Task>
-          <Task Name="read books" >
+          <Task Name="debate" >
 						<Requirements>
 							<Requirement Type="Science" Level="2" />
               <Requirement Type="Wackdonalds" Level="3" />
 						</Requirements>
-						<Effects difficulty="Easy" />
+						<Effects difficulty="VeryEasy" />
 					</Task>
         </Tasks>
 			</Level>
-      <Level ExpToLevel="200">
+      <Level ExpToLevel="150">
         <Tasks>
           <Task Name="substitute" >
             <Requirements>
               <Requirement Type="Science" Level="3" />
             </Requirements>
-            <Effects difficulty="Easy" />
+            <Effects difficulty="Hard" />
           </Task>
           <Task Name="sell infected rats" >
             <Requirements>
               <Requirement Type="Science" Level="3" />
               <Requirement Type="Criminal" Level="3" />
             </Requirements>
-            <Effects difficulty="Easy" />
+            <Effects difficulty="Medium" />
           </Task>
         </Tasks>
       </Level>
-      <Level ExpToLevel="200">
+      <Level ExpToLevel="250">
         <Tasks>
           <Task Name="lab research" >
 						<Requirements>
@@ -88,7 +161,7 @@
 					</Task>
         </Tasks>
       </Level>
-      <Level ExpToLevel="200">
+      <Level ExpToLevel="300">
         <Tasks>
           <Task Name="write articles" >
 						<Requirements>
@@ -105,7 +178,7 @@
 					</Task>
         </Tasks>
       </Level>
-      <Level ExpToLevel="200">
+      <Level ExpToLevel="1800">
         <Tasks>
           <Task Name="work on a Ph.D" >
 						<Requirements>
@@ -115,7 +188,7 @@
 					</Task>
         </Tasks>
       </Level>
-      <Level ExpToLevel="200">
+      <Level ExpToLevel="2500">
         <Tasks>
           <Task Name="research dark matter " >
 						<Requirements>
@@ -125,7 +198,7 @@
 					</Task>
         </Tasks>
       </Level>
-      <Level ExpToLevel="200">
+      <Level ExpToLevel="3500">
         <Tasks>
           <Task Name="research galactic core" >
 						<Requirements>
@@ -148,23 +221,22 @@
 		</Building>
 
     
-    
     <Building Name="Wackdonalds" Type="Wackdonalds" >
-			<Level ExpToLevel="100" >
+			<Level ExpToLevel="70" >
 				<Tasks>
 					<Task Name="clean toilets" >
 						<Requirements />
-						<Effects difficulty="Easy" />
+						<Effects difficulty="VeryEasy" />
 					</Task>
           <Task Name="make hamburgers" >
 						<Requirements >
               <Requirement Type="Science" Level="2" />
             </Requirements>
-						<Effects difficulty="Easy" />
+						<Effects difficulty="TooEasy" />
 					</Task>
 				</Tasks>
 			</Level>
-			<Level ExpToLevel="200" >
+			<Level ExpToLevel="120" >
 				<Tasks>
 					<Task Name="wash the floor" >
 						<Requirements >
@@ -177,18 +249,18 @@
               <Requirement Type="Wackdonalds" Level="2" />
               <Requirement Type="Science" Level="3" />
             </Requirements>
-						<Effects difficulty="Easy" />
+						<Effects difficulty="VeryEasy" />
 					</Task>
           <Task Name="sell joints" >
 						<Requirements >
               <Requirement Type="Wackdonalds" Level="2" />
               <Requirement Type="Criminal" Level="3" />
             </Requirements>
-						<Effects difficulty="Easy" />
+						<Effects difficulty="Medium" />
 					</Task>
 				</Tasks>
 			</Level>
-      <Level ExpToLevel="200" >
+      <Level ExpToLevel="1200" >
 				<Tasks>
 					<Task Name="clean tables" >
 						<Requirements >
@@ -201,7 +273,7 @@
               <Requirement Type="Wackdonalds" Level="3" />
               <Requirement Type="Science" Level="4" />
             </Requirements>
-						<Effects difficulty="Easy" />
+						<Effects difficulty="Medium" />
 					</Task>
 				</Tasks>
 			</Level>
@@ -316,12 +388,13 @@
 			</Level>
 		</Building>
 
+    
 		<Building Name="Criminal" Type="Criminal" >
 			<Level ExpToLevel="100" >
 				<Tasks>
 					<Task Name="pickpocket" >
 						<Requirements />
-						<Effects difficulty="Easy" />
+						<Effects difficulty="VeryEasy" />
 					</Task>
 				</Tasks>
 			</Level>
@@ -348,7 +421,7 @@
 						<Requirements >
               <Requirement Type="Criminal" Level="3" />
             </Requirements>
-						<Effects difficulty="Easy" />
+						<Effects difficulty="Medium" />
 					</Task>
 				</Tasks>
 			</Level>
@@ -465,7 +538,7 @@
     
     
     <Building Name="Home" Type="Home" >
-			<Level ExpToLevel="100" >
+			<Level ExpToLevel="100" AddEnegry="50">
 				<Tasks>
 					<Task Name="rest on a camp-cot" >
             <Requirements />
@@ -473,11 +546,11 @@
 					</Task>
 					<Task Name="save for armchair" >
 						<Requirements />
-						<Effects difficulty="HomeUpgrade" />
+						<Effects difficulty="HomeUpgrade1" />
 					</Task>
 				</Tasks>
 			</Level>
-      <Level ExpToLevel="100" >
+      <Level ExpToLevel="100"  AddEnegry="50" >
 				<Tasks>
 					<Task Name="rest in the armchair" >
 						<Requirements >
@@ -489,7 +562,7 @@
 						<Requirements >
               <Requirement Type="Home" Level="2" />
             </Requirements>
-						<Effects difficulty="HomeUpgrade" />
+						<Effects difficulty="HomeUpgrade1" />
 					</Task>
 				</Tasks>
 			</Level>
@@ -505,7 +578,7 @@
 						<Requirements >
               <Requirement Type="Home" Level="3" />
             </Requirements>
-						<Effects difficulty="HomeUpgrade" />
+						<Effects difficulty="HomeUpgrade1" />
 					</Task>
 				</Tasks>
 			</Level>
@@ -521,7 +594,7 @@
 						<Requirements >
               <Requirement Type="Home" Level="4" />
             </Requirements>
-						<Effects difficulty="HomeUpgrade" />
+						<Effects difficulty="HomeUpgrade1" />
 					</Task>
 				</Tasks>
 			</Level>
@@ -540,7 +613,7 @@
 					</Task>
 					<Task Name="save for kingsize bed" >
 						<Requirements Type="Home" Level="5"/>
-						<Effects difficulty="HomeUpgrade" />
+						<Effects difficulty="HomeUpgrade1" />
 					</Task>
 				</Tasks>
 			</Level>
@@ -556,7 +629,7 @@
 						<Requirements >
               <Requirement Type="Home" Level="6" />
             </Requirements>
-						<Effects difficulty="HomeUpgrade" />
+						<Effects difficulty="HomeUpgrade1" />
 					</Task>
 				</Tasks>
 			</Level>
@@ -572,7 +645,7 @@
 						<Requirements >
               <Requirement Type="Home" Level="7" />
             </Requirements>
-						<Effects difficulty="HomeUpgrade" />
+						<Effects difficulty="HomeUpgrade1" />
 					</Task>
 				</Tasks>
 			</Level>
@@ -588,7 +661,7 @@
 						<Requirements >
               <Requirement Type="Home" Level="8" />
             </Requirements>
-						<Effects difficulty="HomeUpgrade" />
+						<Effects difficulty="HomeUpgrade1" />
 					</Task>
 				</Tasks>
 			</Level>
