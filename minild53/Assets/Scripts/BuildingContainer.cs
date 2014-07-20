@@ -45,6 +45,8 @@ public class BuildingContainer : MonoBehaviour {
 	void onBuildingLevelup()
 	{
 		clearAndAddCurrentTasks ();
+		//audio.pitch = Random.Range(0.9f, 1.1f);
+		audio.Play();
 	}
 
 	public void clearAndAddCurrentTasks()

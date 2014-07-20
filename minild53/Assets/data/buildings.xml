@@ -110,6 +110,14 @@
 					</Task>
 				</Tasks>
 			</Level>
+			<Level ExpToLevel="200" >
+				<Tasks>
+					<Task Name="sell stuff" >
+						<Requirements />
+						<Effects difficulty="Easy" />
+					</Task>
+				</Tasks>
+			</Level>
 		</Building>
 	</Buildings>
 </root>
