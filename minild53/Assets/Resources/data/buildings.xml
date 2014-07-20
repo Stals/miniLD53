@@ -172,6 +172,20 @@
             </Requirements>
 						<Effects difficulty="Easy" />
 					</Task>
+          <Task Name="make bigwack" >
+						<Requirements >
+              <Requirement Type="Wackdonalds" Level="2" />
+              <Requirement Type="Science" Level="3" />
+            </Requirements>
+						<Effects difficulty="Easy" />
+					</Task>
+          <Task Name="sell joints" >
+						<Requirements >
+              <Requirement Type="Wackdonalds" Level="2" />
+              <Requirement Type="Criminal" Level="3" />
+            </Requirements>
+						<Effects difficulty="Easy" />
+					</Task>
 				</Tasks>
 			</Level>
       <Level ExpToLevel="200" >
@@ -179,6 +193,13 @@
 					<Task Name="clean tables" >
 						<Requirements >
               <Requirement Type="Wackdonalds" Level="3" />
+            </Requirements>
+						<Effects difficulty="Easy" />
+					</Task>
+          <Task Name="work as cashier" >
+						<Requirements >
+              <Requirement Type="Wackdonalds" Level="3" />
+              <Requirement Type="Science" Level="4" />
             </Requirements>
 						<Effects difficulty="Easy" />
 					</Task>
@@ -192,6 +213,13 @@
             </Requirements>
 						<Effects difficulty="Easy" />
 					</Task>
+          <Task Name="manage hall" >
+						<Requirements >
+              <Requirement Type="Wackdonalds" Level="4" />
+              <Requirement Type="Science" Level="5" />
+            </Requirements>
+						<Effects difficulty="Easy" />
+					</Task>
 				</Tasks>
 			</Level>
       <Level ExpToLevel="200" >
@@ -199,6 +227,20 @@
 					<Task Name="help boss" >
 						<Requirements >
               <Requirement Type="Wackdonalds" Level="5" />
+            </Requirements>
+						<Effects difficulty="Easy" />
+					</Task>
+          <Task Name="bookkeeping" >
+						<Requirements >
+              <Requirement Type="Wackdonalds" Level="5" />
+              <Requirement Type="Scince" Level="6" />
+            </Requirements>
+						<Effects difficulty="Easy" />
+					</Task>
+          <Task Name="steal from cashbox" >
+						<Requirements >
+              <Requirement Type="Wackdonalds" Level="5" />
+              <Requirement Type="Criminal" Level="5" />
             </Requirements>
 						<Effects difficulty="Easy" />
 					</Task>
@@ -212,6 +254,13 @@
             </Requirements>
 						<Effects difficulty="Easy" />
 					</Task>
+          <Task Name="work with own WackD" >
+						<Requirements >
+              <Requirement Type="Wackdonalds" Level="6" />
+              <Requirement Type="Scince" Level="7" />
+            </Requirements>
+						<Effects difficulty="Easy" />
+					</Task>
 				</Tasks>
 			</Level>
       <Level ExpToLevel="200" >
@@ -219,6 +268,13 @@
 					<Task Name="work in head office" >
 						<Requirements >
               <Requirement Type="Wackdonalds" Level="7" />
+            </Requirements>
+						<Effects difficulty="Easy" />
+					</Task>
+          <Task Name="litigate for patents" >
+						<Requirements >
+              <Requirement Type="Wackdonalds" Level="7" />
+              <Requirement Type="Science" Level="8" />
             </Requirements>
 						<Effects difficulty="Easy" />
 					</Task>
@@ -232,6 +288,13 @@
             </Requirements>
 						<Effects difficulty="Easy" />
 					</Task>
+          <Task Name="work worldwide" >
+						<Requirements >
+              <Requirement Type="Wackdonalds" Level="8" />
+              <Requirement Type="Science" Level="9" />
+            </Requirements>
+						<Effects difficulty="Easy" />
+					</Task>
 				</Tasks>
 			</Level>
       <Level ExpToLevel="-1" >
@@ -239,6 +302,13 @@
 					<Task Name="do nothing" >
 						<Requirements >
               <Requirement Type="Wackdonalds" Level="9" />
+            </Requirements>
+						<Effects difficulty="Easy" />
+					</Task>
+          <Task Name="manage WackD holding" >
+						<Requirements >
+              <Requirement Type="Wackdonalds" Level="9" />
+              <Requirement Type="Science" Level="9" />
             </Requirements>
 						<Effects difficulty="Easy" />
 					</Task>
