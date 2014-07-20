@@ -35,6 +35,9 @@ public class TaskContainer : MonoBehaviour {
 	[SerializeField]
 	AudioSource errorSound;
 
+	[SerializeField]
+	public UIWidget tintableWidget;
+
 	// TODO use and give stuff from here
 
 

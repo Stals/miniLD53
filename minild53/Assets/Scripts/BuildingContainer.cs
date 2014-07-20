@@ -15,7 +15,13 @@ public class BuildingContainer : MonoBehaviour {
 	public UISlider progressSlider;
 
 	[SerializeField]
+	public UIWidget tintableWidget;
+
+	[SerializeField]
 	public UILabel levelLabel;
+
+	[SerializeField]
+	public Color buildingColor;
 	
 
 	// Use this for initialization
@@ -76,6 +82,9 @@ public class BuildingContainer : MonoBehaviour {
 		TaskContainer taskContainer = taskObject.GetComponent<TaskContainer> ();
 		taskContainer.task = task;
 		taskContainer.updateData ();
+
+		tintableWidget.color = buildingColor;
+		taskContainer.tintableWidget.color = buildingColor;
 		
 		return taskObject;
 	}
