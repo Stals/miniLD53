@@ -16,45 +16,200 @@
 		</Difficulty>
 	</Difficulties>
 
+  
+  
 	<Buildings>
-		<Building Name="Science" Type="Science" >
+		<Building Name="UNIVERSITY" Type="Science" >
 			<Level ExpToLevel="100">
 				<Tasks>
-					<Task Name="do research" >
-						<Requirements>
-							<Requirement Type="Science" Level="2" />
-							<Requirement Type="Criminal" Level="2" />
-						</Requirements>
-						<Effects difficulty="Easy" />
-					</Task>
-					<Task Name="rest test" >
+					<Task Name="clean test-tubes" >
 						<Requirements>
 							<Requirement Type="Science" Level="1" />
 						</Requirements>
-						<Effects difficulty="HomeRest" />
+						<Effects difficulty="Easy" />
 					</Task>
 				</Tasks>
 			</Level>
 			<Level ExpToLevel="200">
 				<Tasks>
-					<Task Name="do nothing" >
+					<Task Name="read books" >
 						<Requirements>
 							<Requirement Type="Science" Level="2" />
-							<Requirement Type="Criminal" Level="2" />
 						</Requirements>
-						<Effects difficulty="HomeRest" />
+						<Effects difficulty="Easy" />
 					</Task>
-					<Task Name="do research" >
+        </Tasks>
+			</Level>
+      <Level ExpToLevel="200">
+        <Tasks>
+          <Task Name="substitute" >
+            <Requirements>
+              <Requirement Type="Science" Level="3" />
+            </Requirements>
+            <Effects difficulty="Easy" />
+          </Task>
+        </Tasks>
+      </Level>
+      <Level ExpToLevel="200">
+        <Tasks>
+          <Task Name="lab research" >
 						<Requirements>
-							<Requirement Type="Science" Level="1" />
+							<Requirement Type="Science" Level="4" />
 						</Requirements>
+						<Effects difficulty="Easy" />
+					</Task>
+        </Tasks>
+      </Level>
+      <Level ExpToLevel="200">
+        <Tasks>
+          <Task Name="write articles" >
+						<Requirements>
+							<Requirement Type="Science" Level="5" />
+						</Requirements>
+						<Effects difficulty="Easy" />
+					</Task>
+        </Tasks>
+      </Level>
+      <Level ExpToLevel="200">
+        <Tasks>
+          <Task Name="work on a Ph.D" >
+						<Requirements>
+							<Requirement Type="Science" Level="6" />
+						</Requirements>
+						<Effects difficulty="Easy" />
+					</Task>
+        </Tasks>
+      </Level>
+      <Level ExpToLevel="200">
+        <Tasks>
+          <Task Name="research dark matter " >
+						<Requirements>
+							<Requirement Type="Science" Level="7" />
+						</Requirements>
+						<Effects difficulty="Easy" />
+					</Task>
+        </Tasks>
+      </Level>
+      <Level ExpToLevel="200">
+        <Tasks>
+          <Task Name="research galactic core" >
+						<Requirements>
+							<Requirement Type="Science" Level="8" />
+						</Requirements>
+						<Effects difficulty="Easy" />
+					</Task>
+        </Tasks>
+      </Level>
+      <Level ExpToLevel="-1">
+        <Tasks>
+          <Task Name="create skynet AI" >
+						<Requirements>
+							<Requirement Type="Science" Level="9" />
+						</Requirements>
+						<Effects difficulty="Easy" />
+					</Task>
+        </Tasks>
+      </Level>
+		</Building>
+
+    
+    
+    <Building Name="Wackdonalds" Type="Wackdonalds" >
+			<Level ExpToLevel="100" >
+				<Tasks>
+					<Task Name="clean toilets" >
+						<Requirements />
+						<Effects difficulty="Easy" />
+					</Task>
+				</Tasks>
+			</Level>
+			<Level ExpToLevel="200" >
+				<Tasks>
+					<Task Name="wash the floor" >
+						<Requirements Type="Wackdonalds" Level="2"/>
+						<Effects difficulty="Easy" />
+					</Task>
+				</Tasks>
+			</Level>
+      <Level ExpToLevel="200" >
+				<Tasks>
+					<Task Name="clean tables" >
+						<Requirements Type="Wackdonalds" Level="3"/>
+						<Effects difficulty="Easy" />
+					</Task>
+				</Tasks>
+			</Level>
+      <Level ExpToLevel="200" >
+				<Tasks>
+					<Task Name="bring food" >
+						<Requirements Type="Wackdonalds" Level="4"/>
+						<Effects difficulty="Easy" />
+					</Task>
+				</Tasks>
+			</Level>
+      <Level ExpToLevel="200" >
+				<Tasks>
+					<Task Name="help boss" >
+						<Requirements Type="Wackdonalds" Level="5"/>
+						<Effects difficulty="Easy" />
+					</Task>
+				</Tasks>
+			</Level>
+      <Level ExpToLevel="200" >
+				<Tasks>
+					<Task Name="manage WackD branch" >
+						<Requirements Type="Wackdonalds" Level="6"/>
+						<Effects difficulty="Easy" />
+					</Task>
+				</Tasks>
+			</Level>
+      <Level ExpToLevel="200" >
+				<Tasks>
+					<Task Name="work in head office" >
+						<Requirements Type="Wackdonalds" Level="7"/>
+						<Effects difficulty="Easy" />
+					</Task>
+				</Tasks>
+			</Level>
+      <Level ExpToLevel="200" >
+				<Tasks>
+					<Task Name="seat at meetings" >
+						<Requirements Type="Wackdonalds" Level="8"/>
+						<Effects difficulty="Easy" />
+					</Task>
+				</Tasks>
+			</Level>
+      <Level ExpToLevel="-1" >
+				<Tasks>
+					<Task Name="do nothing" >
+						<Requirements Type="Wackdonalds" Level="9"/>
 						<Effects difficulty="Easy" />
 					</Task>
 				</Tasks>
 			</Level>
 		</Building>
 
-		<Building Name="Home" Type="Home" >
+		<Building Name="Criminal" Type="Criminal" >
+			<Level ExpToLevel="100" >
+				<Tasks>
+					<Task Name="deliver a package" >
+						<Requirements />
+						<Effects difficulty="Easy" />
+					</Task>
+				</Tasks>
+			</Level>
+			<Level ExpToLevel="200" >
+				<Tasks>
+					<Task Name="sell stuff" >
+						<Requirements />
+						<Effects difficulty="Easy" />
+					</Task>
+				</Tasks>
+			</Level>
+		</Building>
+    
+    
+    <Building Name="Home" Type="Home" >
 			<Level ExpToLevel="100" >
 				<Tasks>
 					<Task Name="rest on a camp-cot" >
@@ -80,44 +235,9 @@
 				</Tasks>
 			</Level>
 		</Building>
-
-		<Building Name="Wackdonalds" Type="Wackdonalds" >
-			<Level ExpToLevel="100" >
-				<Tasks>
-					<Task Name="wash the floor" >
-						<Requirements />
-						<Effects difficulty="Easy" />
-					</Task>
-				</Tasks>
-			</Level>
-			<Level ExpToLevel="200" >
-				<Tasks>
-					<Task Name="wash dishes" >
-						<Requirements />
-						<Effects difficulty="Easy" />
-					</Task>
-				</Tasks>
-			</Level>
-		</Building>
-
-
-		<Building Name="Criminal" Type="Criminal" >
-			<Level ExpToLevel="100" >
-				<Tasks>
-					<Task Name="deliver a package" >
-						<Requirements />
-						<Effects difficulty="Easy" />
-					</Task>
-				</Tasks>
-			</Level>
-			<Level ExpToLevel="200" >
-				<Tasks>
-					<Task Name="sell stuff" >
-						<Requirements />
-						<Effects difficulty="Easy" />
-					</Task>
-				</Tasks>
-			</Level>
-		</Building>
 	</Buildings>
+    
+		
+
+
 </root>
