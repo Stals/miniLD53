@@ -376,7 +376,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100006, guid: 1d4804708ba124e379d5a4681c645c52, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1d4804708ba124e379d5a4681c645c52, type: 2}
@@ -840,11 +840,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 9e307d0c36a7c47e1bdab28cf7c5f93d, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 245.000031
+      value: 339.861694
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9e307d0c36a7c47e1bdab28cf7c5f93d, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 240.9505
+      value: 222.166031
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9e307d0c36a7c47e1bdab28cf7c5f93d, type: 2}
       propertyPath: m_LocalPosition.z
@@ -872,7 +872,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9e307d0c36a7c47e1bdab28cf7c5f93d, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9e307d0c36a7c47e1bdab28cf7c5f93d, type: 2}
       propertyPath: leftAnchor.target
@@ -1909,7 +1909,7 @@ Transform:
   m_PrefabInternal: {fileID: 141380984}
   m_GameObject: {fileID: 282799229}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 245.000031, y: 240.9505, z: 0}
+  m_LocalPosition: {x: 339.861694, y: 222.166031, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2145245144}
@@ -3261,7 +3261,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 45bb76c9867534a1283460bf9cf5d1b1, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -406.0495
+      value: -424.833984
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 45bb76c9867534a1283460bf9cf5d1b1, type: 2}
       propertyPath: m_LocalPosition.z
@@ -3289,7 +3289,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 45bb76c9867534a1283460bf9cf5d1b1, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 45bb76c9867534a1283460bf9cf5d1b1, type: 2}
       propertyPath: leftAnchor.target
@@ -3309,19 +3309,19 @@ Prefab:
       objectReference: {fileID: 2145245144}
     - target: {fileID: 400004, guid: 45bb76c9867534a1283460bf9cf5d1b1, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -209.500031
+      value: -304.5
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 45bb76c9867534a1283460bf9cf5d1b1, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -4
+      value: -4.00001526
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: 45bb76c9867534a1283460bf9cf5d1b1, type: 2}
       propertyPath: mWidth
-      value: 916
+      value: 915
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: 45bb76c9867534a1283460bf9cf5d1b1, type: 2}
       propertyPath: aspectRatio
-      value: 25.4444447
+      value: 25.416666
       objectReference: {fileID: 0}
     - target: {fileID: 11400006, guid: 45bb76c9867534a1283460bf9cf5d1b1, type: 2}
       propertyPath: mGradientTop.r
@@ -3565,13 +3565,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: .480273843, g: .904411793, b: 0, a: 1}
   mPivot: 4
-  mWidth: 915
+  mWidth: 1105
   mHeight: 36
   mDepth: 5
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 25.4444447
+  aspectRatio: 25.416666
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -4329,7 +4329,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1065907405
 Transform:
   m_ObjectHideFlags: 0
@@ -4948,7 +4948,7 @@ Transform:
   m_PrefabInternal: {fileID: 757746278}
   m_GameObject: {fileID: 1174851979}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.5, y: -406.0495, z: 0}
+  m_LocalPosition: {x: 2.5, y: -424.833984, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 819427271}
@@ -5026,7 +5026,7 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 915
+  mWidth: 1105
   mHeight: 36
   mDepth: 4
   autoResizeBoxCollider: 0
@@ -7015,7 +7015,7 @@ Transform:
   m_PrefabInternal: {fileID: 757746278}
   m_GameObject: {fileID: 1586691127}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -209.500031, y: -4, z: 0}
+  m_LocalPosition: {x: -304.5, y: -4.00001526, z: 0}
   m_LocalScale: {x: 1.00007999, y: 1.00007999, z: 1.00007999}
   m_Children: []
   m_Father: {fileID: 1174851980}
@@ -7092,11 +7092,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 33b30112876d9416aa4f1e63bb266cf8, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -344.000031
+      value: -438.861694
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 33b30112876d9416aa4f1e63bb266cf8, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 230.9505
+      value: 212.166031
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 33b30112876d9416aa4f1e63bb266cf8, type: 2}
       propertyPath: m_LocalPosition.z
@@ -7124,7 +7124,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 33b30112876d9416aa4f1e63bb266cf8, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 33b30112876d9416aa4f1e63bb266cf8, type: 2}
       propertyPath: leftAnchor.target
@@ -9351,7 +9351,7 @@ Transform:
   m_PrefabInternal: {fileID: 1634958739}
   m_GameObject: {fileID: 2137250499}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -344.000031, y: 230.9505, z: 0}
+  m_LocalPosition: {x: -438.861694, y: 212.166031, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 175963897}
