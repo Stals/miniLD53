@@ -55,8 +55,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: big_bar_empty
-    x: 2025
-    y: 2011
+    x: 2008
+    y: 1980
     width: 16
     height: 37
     borderLeft: 7
@@ -68,8 +68,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: big_bar_full
-    x: 2008
-    y: 2011
+    x: 2025
+    y: 1980
     width: 16
     height: 37
     borderLeft: 7
@@ -95,7 +95,7 @@ MonoBehaviour:
     paddingBottom: 845
   - name: icon_criminal
     x: 2008
-    y: 1949
+    y: 1918
     width: 22
     height: 15
     borderLeft: 0
@@ -108,7 +108,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: icon_energy
     x: 2027
-    y: 1932
+    y: 1901
     width: 13
     height: 16
     borderLeft: 0
@@ -119,9 +119,22 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
+  - name: icon_energy_big
+    x: 2008
+    y: 2018
+    width: 26
+    height: 30
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
   - name: icon_home
-    x: 2031
-    y: 1953
+    x: 2035
+    y: 2019
     width: 11
     height: 11
     borderLeft: 0
@@ -134,7 +147,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: icon_lock
     x: 2008
-    y: 1987
+    y: 1956
     width: 19
     height: 23
     borderLeft: 0
@@ -146,8 +159,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: icon_money
-    x: 2025
-    y: 1914
+    x: 2035
+    y: 2031
     width: 11
     height: 17
     borderLeft: 0
@@ -160,7 +173,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: icon_science
     x: 2008
-    y: 1914
+    y: 1883
     width: 16
     height: 17
     borderLeft: 0
@@ -173,7 +186,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: icon_wacdonalds
     x: 2008
-    y: 1932
+    y: 1901
     width: 18
     height: 16
     borderLeft: 0
@@ -185,8 +198,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: small_bar_empty
-    x: 2008
-    y: 1965
+    x: 2028
+    y: 1958
     width: 17
     height: 21
     borderLeft: 8
@@ -198,8 +211,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: small_bar_full
-    x: 2028
-    y: 1989
+    x: 2008
+    y: 1934
     width: 17
     height: 21
     borderLeft: 8
@@ -212,11 +225,24 @@ MonoBehaviour:
     paddingBottom: 0
   - name: small_bar_science
     x: 2026
-    y: 1965
+    y: 1934
     width: 17
     height: 21
     borderLeft: 8
     borderRight: 8
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: splitter
+    x: 2042
+    y: 2001
+    width: 2
+    height: 16
+    borderLeft: 0
+    borderRight: 0
     borderTop: 0
     borderBottom: 0
     paddingLeft: 0
