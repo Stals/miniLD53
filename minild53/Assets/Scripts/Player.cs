@@ -57,6 +57,13 @@ public class Player {
 	public void changeEnergy(int e)
 	{
 		energy += e;
+
+		if (energy < 0) {
+			energy = 0;
+
+		} else if (energy > maxEnergy) {
+			energy = maxEnergy;
+		}
 	}
 
 }
