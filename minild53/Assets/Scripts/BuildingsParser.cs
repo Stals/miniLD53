@@ -82,16 +82,18 @@ public class BuildingsParser {
 			Building building = new Building (Building.typeFromString(buildingNode.Attributes["Type"].Value));
 			building.levels = new List<BuildingLevel> ();
 
+			int levelCount = 1;
 			foreach(XmlNode buildingLevelNode in buildingNode.ChildNodes){
-				BuildingLevel level = parseLevel(buildingLevelNode, building);
+				BuildingLevel level = parseLevel(buildingLevelNode, building, levelCount);
 				building.addLevel(level);
+				++levelCount;
 			}
 			buildings.Add(building);
 		}
 		return buildings;
 	}
 
-	private static BuildingLevel parseLevel(XmlNode node, Building building)
+	private static BuildingLevel parseLevel(XmlNode node, Building building, int levelNum)
 	{
 		BuildingLevel level = new BuildingLevel (int.Parse (node.Attributes ["ExpToLevel"].Value));
 
@@ -99,13 +101,13 @@ public class BuildingsParser {
 
 		XmlNodeList tasksList = node.ChildNodes [0].ChildNodes;
 		foreach (XmlNode taskNode in tasksList) {
-			Task task = parseTask (taskNode, building);
+			Task task = parseTask (taskNode, building, levelNum);
 			level.tasks.Add (task);
 		}
 		return level;
 	}
 
-	private static Task parseTask(XmlNode node, Building building)
+	private static Task parseTask(XmlNode node, Building building, int levelNum)
 	{
 		Task task = new Task (building);
 		task.name = node.Attributes ["Name"].Value;
@@ -115,7 +117,7 @@ public class BuildingsParser {
 		// TODO pass different levels
 
 		string diffuculty = node.LastChild.Attributes ["difficulty"].Value;
-		task.complitionEffects = getDifficultyByName (diffuculty).getEffectsForLevel (1);
+		task.complitionEffects = getDifficultyByName (diffuculty).getEffectsForLevel (levelNum);
 
 		return task;
 	}

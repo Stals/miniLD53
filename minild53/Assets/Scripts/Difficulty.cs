@@ -15,10 +15,15 @@ public class Difficulty {
 	public List<TaskEffect> getEffectsForLevel(int buildingLevel)
 	{
 		if (buildingLevel > 1) {
-			List<TaskEffect> changedEffects = effects.GetRange (0, effects.Count);
-			foreach (TaskEffect effect in changedEffects) {
-				// TODO round?
-				effect.amount *= (int)(buildingLevel * E_CONST);
+
+
+			List<TaskEffect> changedEffects = new List<TaskEffect>();
+
+			foreach(TaskEffect effect in effects)
+			{
+				TaskEffect newEffect = new TaskEffect(effect);
+				newEffect.amount = (int)getAmountForLevel(newEffect.amount, buildingLevel);
+				changedEffects.Add(newEffect);
 			}
 
 			return changedEffects;
@@ -26,6 +31,12 @@ public class Difficulty {
 		} else {
 			return effects;
 		}
+	}
+
+	private float getAmountForLevel(int amount, int level)
+	{
+		return amount * level;
+		//return amount * (level * E_CONST);
 	}
 
 }

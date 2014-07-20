@@ -20,6 +20,12 @@ public enum TaskEffectType{
 };
 
 public class TaskEffect{
+	public TaskEffect(TaskEffect other)
+	{
+		type = other.type;
+		amount = other.amount;
+	}
+
 	public TaskEffect()
 	{
 	}
