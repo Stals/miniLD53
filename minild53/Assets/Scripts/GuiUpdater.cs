@@ -3,8 +3,8 @@ using System.Collections;
 
 public class GuiUpdater : MonoBehaviour {
 
-	[SerializeField]
-	UILabel moneyLabel;
+	//[SerializeField]
+	//UILabel moneyLabel;
 
 	[SerializeField]
 	UILabel ageLabel;
@@ -21,7 +21,7 @@ public class GuiUpdater : MonoBehaviour {
 
 	void OnGUI()
 	{
-		moneyLabel.text = moneyToString (Game.Instance.getPlayer ().money);
+		//moneyLabel.text = moneyToString (Game.Instance.getPlayer ().money);
 
 		ageLabel.text = "Age: " + Game.Instance.getPlayer().age.asString ();
 	}

@@ -24,7 +24,7 @@ public class Game  {
 
 	public void init()
 	{
-		player = new Player(100, 0);
+		player = new Player(100, 0, 100000);
 		bank = new Bank (100000);
 
 		buildings = BuildingsParser.getBuildings ();
@@ -34,10 +34,10 @@ public class Game  {
 		return player;
 	}
 
-	public Bank getBank()
-	{
-		return bank;
-	}
+	//public Bank getBank()
+	///{
+	//	return bank;
+	//}
 
 	private void parseBuildings()
 	{

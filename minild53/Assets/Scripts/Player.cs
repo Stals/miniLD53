@@ -35,11 +35,12 @@ public class Age{
 }
 
 public class Player {
-	public Player (int _energy, int _money)
+	public Player (int _energy, int _money, int _maxMoney)
 	{
 		energy = _energy;
 		maxEnergy = energy;
 		money = _money;
+		maxMoney = _maxMoney;
 
 		age = new Age (20, 1, 1);
 	}
@@ -48,6 +49,7 @@ public class Player {
 	public int energy { get; set; }
 	public int maxEnergy{ get; set; }
 	public int money { get; set; }
+	public int maxMoney { get; set; }
 
 	public float getCurrentEnergyFactor()
 	{	
