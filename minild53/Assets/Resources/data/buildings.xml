@@ -226,7 +226,7 @@
 				<Tasks>
 					<Task Name="clean toilets" >
 						<Requirements />
-						<Effects difficulty="TooEasy" />
+						<Effects difficulty="VeryEasy" />
 					</Task>
           <Task Name="make hamburgers" >
 						<Requirements >
@@ -242,7 +242,7 @@
 						<Requirements >
               <Requirement Type="Wackdonalds" Level="2" />
             </Requirements>
-						<Effects difficulty="TooEasy" />
+						<Effects difficulty="VeryEasy" />
 					</Task>
           <Task Name="make bigwack" >
 						<Requirements >
@@ -266,7 +266,7 @@
 						<Requirements >
               <Requirement Type="Wackdonalds" Level="3" />
             </Requirements>
-						<Effects difficulty="TooEasy" />
+						<Effects difficulty="Easy" />
 					</Task>
           <Task Name="work as cashier" >
 						<Requirements >
@@ -283,7 +283,7 @@
 						<Requirements >
               <Requirement Type="Wackdonalds" Level="4" />
             </Requirements>
-						<Effects difficulty="TooEasy" />
+						<Effects difficulty="Easy" />
 					</Task>
           <Task Name="manage hall" >
 						<Requirements >
@@ -300,14 +300,14 @@
 						<Requirements >
               <Requirement Type="Wackdonalds" Level="5" />
             </Requirements>
-						<Effects difficulty="TooEasy" />
+						<Effects difficulty="Medium" />
 					</Task>
           <Task Name="bookkeeping" >
 						<Requirements >
               <Requirement Type="Wackdonalds" Level="5" />
               <Requirement Type="Science" Level="6" />
             </Requirements>
-						<Effects difficulty="TooEasy" />
+						<Effects difficulty="VeryEasy" />
 					</Task>
           <Task Name="steal from cashbox" >
 						<Requirements >
@@ -324,14 +324,14 @@
 						<Requirements >
               <Requirement Type="Wackdonalds" Level="6" />
             </Requirements>
-						<Effects difficulty="TooEasy" />
+						<Effects difficulty="Hard" />
 					</Task>
           <Task Name="work with own WackD" >
 						<Requirements >
               <Requirement Type="Wackdonalds" Level="6" />
               <Requirement Type="Science" Level="7" />
             </Requirements>
-						<Effects difficulty="TooEasy" />
+						<Effects difficulty="Easy" />
 					</Task>
 				</Tasks>
 			</Level>
@@ -341,14 +341,14 @@
 						<Requirements >
               <Requirement Type="Wackdonalds" Level="7" />
             </Requirements>
-						<Effects difficulty="TooEasy" />
+						<Effects difficulty="Hard" />
 					</Task>
           <Task Name="litigate for patents" >
 						<Requirements >
               <Requirement Type="Wackdonalds" Level="7" />
               <Requirement Type="Science" Level="8" />
             </Requirements>
-						<Effects difficulty="TooEasy" />
+						<Effects difficulty="VeryEasy" />
 					</Task>
 				</Tasks>
 			</Level>
@@ -358,14 +358,14 @@
 						<Requirements >
               <Requirement Type="Wackdonalds" Level="8" />
             </Requirements>
-						<Effects difficulty="TooEasy" />
+						<Effects difficulty="Hard" />
 					</Task>
           <Task Name="work worldwide" >
 						<Requirements >
               <Requirement Type="Wackdonalds" Level="8" />
               <Requirement Type="Science" Level="9" />
             </Requirements>
-						<Effects difficulty="TooEasy" />
+						<Effects difficulty="VeryEasy" />
 					</Task>
 				</Tasks>
 			</Level>
@@ -375,7 +375,7 @@
 						<Requirements >
               <Requirement Type="Wackdonalds" Level="9" />
             </Requirements>
-						<Effects difficulty="TooEasy" />
+						<Effects difficulty="Medium" />
 					</Task>
           <Task Name="manage WackD holding" >
 						<Requirements >
@@ -404,7 +404,7 @@
             <Requirements >
               <Requirement Type="Criminal" Level="2" />
             </Requirements>
-						<Effects difficulty="TooEasy" />
+						<Effects difficulty="VeryEasy" />
 					</Task>
           <Task Name="rob customers" >
 						<Requirements >
