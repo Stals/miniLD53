@@ -27,6 +27,10 @@ public class BuildingLevel{
 
 	public void addExp(int exp)
 	{
+		if (maxExp == -1) {
+			return;
+		}
+
 		currentExp += exp;
 		// TODO add leveluping
 		// send event?
@@ -40,6 +44,9 @@ public class BuildingLevel{
 
 	public float getCurrentExpFactor()
 	{	
+		if (maxExp == -1) {
+			return 1;
+		}
 		return (float)currentExp / maxExp;
 	}
 
