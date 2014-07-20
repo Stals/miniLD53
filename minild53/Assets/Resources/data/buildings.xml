@@ -96,7 +96,6 @@
 						</Requirements>
 						<Effects difficulty="Easy" />
 					</Task>
-        </Tasks>
         <Task Name="steal articles" >
 						<Requirements>
 							<Requirement Type="Science" Level="5" />
@@ -155,6 +154,12 @@
 				<Tasks>
 					<Task Name="clean toilets" >
 						<Requirements />
+						<Effects difficulty="Easy" />
+					</Task>
+          <Task Name="make hamburgers" >
+						<Requirements >
+              <Requirement Type="Science" Level="2" />
+            </Requirements>
 						<Effects difficulty="Easy" />
 					</Task>
 				</Tasks>
