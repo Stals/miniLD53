@@ -17,6 +17,21 @@ public class BuildingsParser {
 		return null;
 	}
 
+	public static List<TaskEffect> getEffects(XmlNodeList effectsNode)
+	{
+		List<TaskEffect> effects = new List<TaskEffect>();
+		foreach (XmlNode effectNode in effectsNode) {
+			TaskEffect effect = new TaskEffect ();
+			effect.type = TaskEffect.stringToType(effectNode.Attributes["Type"].Value);
+			effect.amount = int.Parse(effectNode.Attributes["Amount"].Value);
+			
+			effects.Add(effect);
+		
+		}
+
+		return effects;
+	}
+
 	public static List<TaskEffect> getFakeEffects()
 	{
 		List<TaskEffect> effects = new List<TaskEffect>();
@@ -55,7 +70,7 @@ public class BuildingsParser {
 		foreach (XmlNode diffNode in list) {
 			Difficulty difficulty = new Difficulty ();
 			difficulty.name = diffNode.Attributes["Name"].Value;
-			difficulty.effects = getFakeEffects ();
+			difficulty.effects = getEffects (diffNode.ChildNodes);
 
 			difficulties.Add (difficulty);
 		}

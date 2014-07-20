@@ -27,7 +27,7 @@ public class TaskEffect{
 	public TaskEffectType type;
 	public int amount;
 
-	public TaskEffectType stringToType(string str)
+	static public TaskEffectType stringToType(string str)
 	{
 		if(str == "Energy"){
 			return TaskEffectType.EnergyChange;
