@@ -17,4 +17,9 @@ public class DialogController : MonoBehaviour {
 	{
 		this.gameObject.SetActive (false);
 	}
+
+	public void show()
+	{
+		this.gameObject.SetActive (true);
+	}
 }
