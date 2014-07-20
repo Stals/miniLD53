@@ -11,34 +11,53 @@
 		</Difficulty>
 	</Difficulties>
 
-	<Building Name="Science" Type="Science" >
-		<Level ExpToLevel="50">
-			<Tasks>
-				<Task Name="do research" >
-					<Requirements>
-						<Requirement Type="Science" Level="2" />
-						<Requirement Type="Criminal" Level="2" />
-					</Requirements>
-					<Effects difficulty="Easy" />
-				</Task>
-				<Task Name="do research" >
-					<Requirements>
-						<Requirement Type="Science" Level="1" />
-					</Requirements>
-					<Effects difficulty="HomeRest" />
-				</Task>
-			</Tasks>
-		</Level>
-	</Building>
+	<Buildings>
+		<Building Name="Science" Type="Science" >
+			<Level ExpToLevel="100">
+				<Tasks>
+					<Task Name="do research" >
+						<Requirements>
+							<Requirement Type="Science" Level="2" />
+							<Requirement Type="Criminal" Level="2" />
+						</Requirements>
+						<Effects difficulty="Easy" />
+					</Task>
+					<Task Name="do research" >
+						<Requirements>
+							<Requirement Type="Science" Level="1" />
+						</Requirements>
+						<Effects difficulty="HomeRest" />
+					</Task>
+				</Tasks>
+			</Level>
+			<Level ExpToLevel="200">
+				<Tasks>
+					<Task Name="do nothing" >
+						<Requirements>
+							<Requirement Type="Science" Level="2" />
+							<Requirement Type="Criminal" Level="2" />
+						</Requirements>
+						<Effects difficulty="HomeRest" />
+					</Task>
+					<Task Name="do research" >
+						<Requirements>
+							<Requirement Type="Science" Level="1" />
+						</Requirements>
+						<Effects difficulty="Easy" />
+					</Task>
+				</Tasks>
+			</Level>
+		</Building>
 
-	<Building Name="Home" Type="Home" >
-		<Level ExpToLevel="50" >
-			<Tasks>
-				<Task Name="Rest on a camp-cot" >
-					<Requirements />
-					<Effects difficulty="HomeRest" />
-				</Task>
-			</Tasks>
-		</Level>
-	</Building>
+		<Building Name="Home" Type="Home" >
+			<Level ExpToLevel="50" >
+				<Tasks>
+					<Task Name="Rest on a camp-cot" >
+						<Requirements />
+						<Effects difficulty="HomeRest" />
+					</Task>
+				</Tasks>
+			</Level>
+		</Building>
+	</Buildings>
 </root>
