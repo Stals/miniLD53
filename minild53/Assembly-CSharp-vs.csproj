@@ -66,6 +66,8 @@
      <Compile Include="Assets\NGUI\Examples\Scripts\Other\UISliderColors.cs" />
      <Compile Include="Assets\NGUI\Examples\Scripts\Other\WindowAutoYaw.cs" />
      <Compile Include="Assets\NGUI\Examples\Scripts\Other\WindowDragTilt.cs" />
+     <Compile Include="Assets\Scripts\Bank.cs" />
+     <Compile Include="Assets\Scripts\BankContainer.cs" />
      <Compile Include="Assets\Scripts\Building.cs" />
      <Compile Include="Assets\Scripts\BuildingContainer.cs" />
      <Compile Include="Assets\Scripts\BuildingsParser.cs" />
