@@ -1169,8 +1169,8 @@ MonoBehaviour:
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
   mFont: {fileID: 11400000, guid: f54b5729c80c8476baed9c7abcf51eed, type: 2}
-  mText: Wackdonalds
-  mFontSize: 34
+  mText: WACK DONALD'S
+  mFontSize: 30
   mFontStyle: 1
   mAlignment: 1
   mEncoding: 1
@@ -1238,6 +1238,14 @@ Prefab:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 59b6b1971f7e641458cfd3efead2b45f, type: 3}
+    - target: {fileID: 11400012, guid: 7871e0482887d4d46be3b0a8434ea1dd, type: 2}
+      propertyPath: mText
+      value: UNIVERSITY
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400012, guid: 7871e0482887d4d46be3b0a8434ea1dd, type: 2}
+      propertyPath: mFontSize
+      value: 30
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7871e0482887d4d46be3b0a8434ea1dd, type: 2}
   m_RootGameObject: {fileID: 1798929475}
@@ -1622,7 +1630,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2145245144}
-  m_RootOrder: 4
+  m_RootOrder: 3
 --- !u!114 &282799231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2052,7 +2060,7 @@ MonoBehaviour:
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
   mFont: {fileID: 11400000, guid: f54b5729c80c8476baed9c7abcf51eed, type: 2}
-  mText: Home
+  mText: HOME
   mFontSize: 34
   mFontStyle: 1
   mAlignment: 1
@@ -2979,7 +2987,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400012, guid: 7871e0482887d4d46be3b0a8434ea1dd, type: 2}
       propertyPath: mText
-      value: Home
+      value: HOME
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 7871e0482887d4d46be3b0a8434ea1dd, type: 2}
       propertyPath: mSpriteName
@@ -3008,6 +3016,10 @@ Prefab:
     - target: {fileID: 8200000, guid: 7871e0482887d4d46be3b0a8434ea1dd, type: 2}
       propertyPath: m_PlayOnAwake
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400010, guid: 7871e0482887d4d46be3b0a8434ea1dd, type: 2}
+      propertyPath: mFontSize
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7871e0482887d4d46be3b0a8434ea1dd, type: 2}
@@ -4123,7 +4135,7 @@ Transform:
   - {fileID: 1586691128}
   - {fileID: 2039757881}
   m_Father: {fileID: 2145245144}
-  m_RootOrder: 6
+  m_RootOrder: 5
 --- !u!114 &1174851981
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4480,8 +4492,8 @@ MonoBehaviour:
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
   mFont: {fileID: 11400000, guid: f54b5729c80c8476baed9c7abcf51eed, type: 2}
-  mText: Science
-  mFontSize: 34
+  mText: UNIVERSITY
+  mFontSize: 30
   mFontStyle: 1
   mAlignment: 1
   mEncoding: 1
@@ -4559,7 +4571,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400012, guid: 7871e0482887d4d46be3b0a8434ea1dd, type: 2}
       propertyPath: mText
-      value: Wackdonalds
+      value: WACK DONALD'S
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 7871e0482887d4d46be3b0a8434ea1dd, type: 2}
       propertyPath: mSpriteName
@@ -4581,6 +4593,10 @@ Prefab:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: bc6db42d8a2d20d42872ad03f72308d8, type: 3}
+    - target: {fileID: 11400012, guid: 7871e0482887d4d46be3b0a8434ea1dd, type: 2}
+      propertyPath: mFontSize
+      value: 30
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7871e0482887d4d46be3b0a8434ea1dd, type: 2}
   m_RootGameObject: {fileID: 1540365468}
@@ -4704,7 +4720,7 @@ Transform:
   m_LocalScale: {x: .99992007, y: .99992007, z: .99992007}
   m_Children: []
   m_Father: {fileID: 2145245144}
-  m_RootOrder: 8
+  m_RootOrder: 7
 --- !u!114 &1322119873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4838,7 +4854,7 @@ MonoBehaviour:
   mTrueTypeFont: {fileID: 0}
   mFont: {fileID: 11400000, guid: f54b5729c80c8476baed9c7abcf51eed, type: 2}
   mText: level 1
-  mFontSize: 34
+  mFontSize: 30
   mFontStyle: 1
   mAlignment: 3
   mEncoding: 1
@@ -5098,7 +5114,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400012, guid: 7871e0482887d4d46be3b0a8434ea1dd, type: 2}
       propertyPath: mText
-      value: Criminal
+      value: BACK STREET
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 7871e0482887d4d46be3b0a8434ea1dd, type: 2}
       propertyPath: mSpriteName
@@ -5120,6 +5136,10 @@ Prefab:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: e38a884c663ae7745814076117630128, type: 3}
+    - target: {fileID: 11400012, guid: 7871e0482887d4d46be3b0a8434ea1dd, type: 2}
+      propertyPath: mFontSize
+      value: 30
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7871e0482887d4d46be3b0a8434ea1dd, type: 2}
   m_RootGameObject: {fileID: 1507966802}
@@ -5482,7 +5502,7 @@ Transform:
   - {fileID: 1177830823}
   - {fileID: 152275106}
   m_Father: {fileID: 2145245144}
-  m_RootOrder: 2
+  m_RootOrder: 1
 --- !u!114 &1507966804
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5667,7 +5687,7 @@ Transform:
   - {fileID: 923743739}
   - {fileID: 1757839536}
   m_Father: {fileID: 2145245144}
-  m_RootOrder: 0
+  m_RootOrder: 9
 --- !u!114 &1540365470
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6346,7 +6366,7 @@ Transform:
   - {fileID: 1144821008}
   - {fileID: 1445730035}
   m_Father: {fileID: 2145245144}
-  m_RootOrder: 5
+  m_RootOrder: 4
 --- !u!114 &1713115537
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6758,7 +6778,7 @@ Transform:
   - {fileID: 208351283}
   - {fileID: 2070679545}
   m_Father: {fileID: 2145245144}
-  m_RootOrder: 1
+  m_RootOrder: 0
 --- !u!114 &1798929477
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7113,7 +7133,7 @@ Transform:
   - {fileID: 1359203693}
   - {fileID: 685709632}
   m_Father: {fileID: 2145245144}
-  m_RootOrder: 3
+  m_RootOrder: 2
 --- !u!114 &1894349887
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7301,7 +7321,7 @@ Transform:
   - {fileID: 1064169110}
   - {fileID: 119488714}
   m_Father: {fileID: 2145245144}
-  m_RootOrder: 7
+  m_RootOrder: 6
 --- !u!114 &1952691915
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7832,8 +7852,8 @@ MonoBehaviour:
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
   mFont: {fileID: 11400000, guid: f54b5729c80c8476baed9c7abcf51eed, type: 2}
-  mText: Criminal
-  mFontSize: 34
+  mText: BACK STREET
+  mFontSize: 30
   mFontStyle: 1
   mAlignment: 1
   mEncoding: 1
@@ -7886,7 +7906,7 @@ Transform:
   - {fileID: 168716997}
   - {fileID: 610998015}
   m_Father: {fileID: 2145245144}
-  m_RootOrder: 9
+  m_RootOrder: 8
 --- !u!114 &2137250501
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8001,7 +8021,6 @@ Transform:
   m_LocalPosition: {x: 0, y: 40, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1540365469}
   - {fileID: 1798929476}
   - {fileID: 1507966803}
   - {fileID: 1894349886}
@@ -8011,6 +8030,7 @@ Transform:
   - {fileID: 1952691914}
   - {fileID: 1322119872}
   - {fileID: 2137250500}
+  - {fileID: 1540365469}
   m_Father: {fileID: 1174979832}
   m_RootOrder: 1
 --- !u!114 &2145245145
