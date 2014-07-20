@@ -67,6 +67,18 @@
 					</Task>
 				</Tasks>
 			</Level>
+			<Level ExpToLevel="300" >
+				<Tasks>
+					<Task Name="Rest on a sofa" >
+						<Requirements />
+						<Effects difficulty="HomeRest" />
+					</Task>
+					<Task Name="upgrade home" >
+						<Requirements />
+						<Effects difficulty="HomeUpgrade" />
+					</Task>
+				</Tasks>
+			</Level>
 		</Building>
 
 		<Building Name="Wackdonalds" Type="Wackdonalds" >
