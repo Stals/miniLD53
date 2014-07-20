@@ -28,6 +28,13 @@
 						</Requirements>
 						<Effects difficulty="Easy" />
 					</Task>
+          <Task Name="sell rare materials" >
+						<Requirements>
+							<Requirement Type="Science" Level="1" />
+              <Requirement Type="Criminal" Level="2" />
+						</Requirements>
+						<Effects difficulty="Easy" />
+					</Task>
 				</Tasks>
 			</Level>
 			<Level ExpToLevel="200">
@@ -35,6 +42,13 @@
 					<Task Name="read books" >
 						<Requirements>
 							<Requirement Type="Science" Level="2" />
+						</Requirements>
+						<Effects difficulty="Easy" />
+					</Task>
+          <Task Name="read books" >
+						<Requirements>
+							<Requirement Type="Science" Level="2" />
+              <Requirement Type="Wackdonalds" Level="3" />
 						</Requirements>
 						<Effects difficulty="Easy" />
 					</Task>
@@ -48,6 +62,13 @@
             </Requirements>
             <Effects difficulty="Easy" />
           </Task>
+          <Task Name="sell infected rats" >
+            <Requirements>
+              <Requirement Type="Science" Level="3" />
+              <Requirement Type="Criminal" Level="3" />
+            </Requirements>
+            <Effects difficulty="Easy" />
+          </Task>
         </Tasks>
       </Level>
       <Level ExpToLevel="200">
@@ -58,6 +79,13 @@
 						</Requirements>
 						<Effects difficulty="Easy" />
 					</Task>
+          <Task Name="public lecturing" >
+						<Requirements>
+							<Requirement Type="Science" Level="4" />
+              <Requirement Type="Wackdonalds" Level="5" />
+						</Requirements>
+						<Effects difficulty="Easy" />
+					</Task>
         </Tasks>
       </Level>
       <Level ExpToLevel="200">
@@ -65,6 +93,14 @@
           <Task Name="write articles" >
 						<Requirements>
 							<Requirement Type="Science" Level="5" />
+						</Requirements>
+						<Effects difficulty="Easy" />
+					</Task>
+        </Tasks>
+        <Task Name="steal articles" >
+						<Requirements>
+							<Requirement Type="Science" Level="5" />
+              <Requirement Type="Criminal" Level="6" />
 						</Requirements>
 						<Effects difficulty="Easy" />
 					</Task>
@@ -222,6 +258,13 @@
             </Requirements>
 						<Effects difficulty="Easy" />
 					</Task>
+          <Task Name="rob customers" >
+						<Requirements >
+              <Requirement Type="Criminal" Level="2" />
+              <Requirement Type="Wackdonalds" Level="2" />
+            </Requirements>
+						<Effects difficulty="Easy" />
+					</Task>
 				</Tasks>
 			</Level>
       <Level ExpToLevel="200" >
@@ -242,6 +285,13 @@
             </Requirements>
 						<Effects difficulty="Easy" />
 					</Task>
+          <Task Name="blackmail" >
+						<Requirements >
+              <Requirement Type="Criminal" Level="4" />
+              <Requirement Type="Science" Level="5" />
+            </Requirements>
+						<Effects difficulty="Easy" />
+					</Task>
 				</Tasks>
 			</Level>
       <Level ExpToLevel="200" >
@@ -252,6 +302,13 @@
             </Requirements>
 						<Effects difficulty="Easy" />
 					</Task>
+          <Task Name="make drugs" >
+						<Requirements >
+              <Requirement Type="Criminal" Level="5" />
+              <Requirement Type="Science" Level="5" />
+            </Requirements>
+						<Effects difficulty="Easy" />
+					</Task>
 				</Tasks>
 			</Level>
       <Level ExpToLevel="200" >
@@ -259,6 +316,13 @@
 					<Task Name="kidnap" >
 						<Requirements >
               <Requirement Type="Criminal" Level="6" />
+            </Requirements>
+						<Effects difficulty="Easy" />
+					</Task>
+          <Task Name="blackhole money" >
+						<Requirements >
+              <Requirement Type="Criminal" Level="6" />
+              <Requirement Type="Science" Level="6" />
             </Requirements>
 						<Effects difficulty="Easy" />
 					</Task>
@@ -282,6 +346,27 @@
             </Requirements>
 						<Effects difficulty="Easy" />
 					</Task>
+          <Task Name=" manage own mafia" >
+						<Requirements >
+              <Requirement Type="Criminal" Level="8" />
+              <Requirement Type="Wackdonalds" Level="8" />
+            </Requirements>
+						<Effects difficulty="Easy" />
+					</Task>
+          <Task Name="godfathering" >
+						<Requirements >
+              <Requirement Type="Criminal" Level="8" />
+              <Requirement Type="Home" Level="8" />
+            </Requirements>
+						<Effects difficulty="Easy" />
+					</Task>
+          <Task Name="sell secrets" >
+						<Requirements >
+              <Requirement Type="Criminal" Level="8" />
+              <Requirement Type="Science" Level="8" />
+            </Requirements>
+						<Effects difficulty="Easy" />
+					</Task>
 				</Tasks>
 			</Level>
       <Level ExpToLevel="200" >
@@ -289,6 +374,13 @@
 					<Task Name="smoke cigars" >
 						<Requirements >
               <Requirement Type="Criminal" Level="9" />
+            </Requirements>
+						<Effects difficulty="Easy" />
+					</Task>
+          <Task Name="conquer the world" >
+						<Requirements >
+              <Requirement Type="Criminal" Level="9" />
+              <Requirement Type="Science" Level="9" />
             </Requirements>
 						<Effects difficulty="Easy" />
 					</Task>
