@@ -95,6 +95,8 @@ public class TaskContainer : MonoBehaviour {
 			return;
 		}
 
+		playSound ();
+
 		Game.Instance.getPlayer ().age.addWeek ();
 
 
@@ -106,6 +108,14 @@ public class TaskContainer : MonoBehaviour {
 			fullyCompleted = true;
 		}
 		applyTaskEffects (task, fullyCompleted);
+	}
+
+	private void playSound()
+	{
+		//AudioSource audio = this.GetComponent<AudioSource> ();
+
+		audio.pitch = Random.Range(0.9f, 1.1f);
+		audio.Play();
 	}
 
 	public void applyTaskEffects(Task task, bool full)
