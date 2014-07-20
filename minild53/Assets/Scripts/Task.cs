@@ -10,6 +10,23 @@ public class Requirement {
 
 	public BuildingType type;
 	public int level;
+
+	static public string getIconPath(BuildingType bType)
+	{
+		switch (bType) {
+			case BuildingType.Wackdonalds:
+				return "icon_wacdonalds";
+			case BuildingType.Science:
+				return "icon_science";
+			case BuildingType.Criminal:
+				return "icon_criminal";
+			case BuildingType.Home:
+				return "icon_home";
+
+		}
+		return "";
+	}
+
 }
 
 public enum TaskEffectType{
