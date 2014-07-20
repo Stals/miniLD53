@@ -1993,6 +1993,10 @@ Prefab:
       propertyPath: onDragOver.Array.data[0].mMethodName
       value: startDeposit
       objectReference: {fileID: 0}
+    - target: {fileID: 11400014, guid: 45bb76c9867534a1283460bf9cf5d1b1, type: 2}
+      propertyPath: currentMoneyLabel
+      value: 
+      objectReference: {fileID: 669177652}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 45bb76c9867534a1283460bf9cf5d1b1, type: 2}
   m_RootGameObject: {fileID: 1174851979}
@@ -3561,6 +3565,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   depositSlider: {fileID: 1174851982}
+  currentMoneyLabel: {fileID: 669177652}
 --- !u!114 &1174851982
 MonoBehaviour:
   m_ObjectHideFlags: 0

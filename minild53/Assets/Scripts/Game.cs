@@ -18,18 +18,25 @@ public class Game  {
 	}
 
 	Player player;
-
+	Bank bank;
 
 	List<Building> buildings;
 
 	public void init()
 	{
 		player = new Player(100, 0);
+		bank = new Bank (100000);
+
 		buildings = BuildingsParser.getBuildings ();
 	}
 	
 	public Player getPlayer(){
 		return player;
+	}
+
+	public Bank getBank()
+	{
+		return bank;
 	}
 
 	private void parseBuildings()

@@ -6,11 +6,14 @@ public class BankContainer : MonoBehaviour {
 	[SerializeField]
 	UISlider depositSlider;
 
-	bool isDepositing;
+	[SerializeField]
+	UILabel currentMoneyLabel;
+
+
+	bool isDepositing = false;
 
 	// Use this for initialization
 	void Start () {
-		isDepositing = false;
 	}
 	
 	// Update is called once per frame
@@ -20,9 +23,18 @@ public class BankContainer : MonoBehaviour {
 
 	void OnGUI()
 	{
-		if (isDepositing) {
-			depositSlider.value = depositSlider.value + 0.001f;
+		if (!isDepositing)
+			return;
+
+		if (Game.Instance.getPlayer ().money > 0) {
+			Game.Instance.getBank ().addMoney(1);
+			Game.Instance.getPlayer ().money -= 1;
 		}
+
+		depositSlider.value = (float)Game.Instance.getBank ().money / Game.Instance.getBank ().maxMoney;
+
+
+		currentMoneyLabel.text = Game.Instance.getBank ().money + " $";
 	}
 
 	public void startDeposit()

@@ -1,15 +1,17 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Bank : MonoBehaviour {
-
-	// Use this for initialization
-	void Start () {
-	
+public class Bank {
+	public Bank(int _maxMoney)
+	{
+		maxMoney = _maxMoney;
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+
+	public int money { set; get; }
+	public int maxMoney { set; get; }
+
+	public void addMoney(int m)
+	{
+		money += m;
 	}
 }
