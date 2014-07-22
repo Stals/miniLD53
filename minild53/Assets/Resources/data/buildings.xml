@@ -495,7 +495,7 @@
 					</Task>
 				</Tasks>
 			</Level>
-      <Level ExpToLevel="200" >
+      <Level ExpToLevel="-1" >
 				<Tasks>
 					<Task Name="smoke cigars" >
 						<Requirements >
