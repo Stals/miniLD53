@@ -212,11 +212,11 @@ public class TaskContainer : MonoBehaviour {
 
 	public void applyEffect(TaskEffect effect, bool full)
 	{
-		if (full && (effect.type == TaskEffectType.BuildingExpChange)) {
+		/*if (full && (effect.type == TaskEffectType.BuildingExpChange)) {
 			task.building.getCurrentBuildingLevel().addExp(effect.amount);
 			// TODO и обновляем его бар?
 			return;
-		}
+		}*/
 
 		switch (effect.type) {
 		case TaskEffectType.MoneyChange:
@@ -226,6 +226,10 @@ public class TaskContainer : MonoBehaviour {
 		case TaskEffectType.EnergyChange:
 			Game.Instance.getPlayer ().changeEnergy (effect.amount);
 			break;
+            
+        case TaskEffectType.BuildingExpChange:
+            task.building.getCurrentBuildingLevel().addExp(effect.amount);
+            break;
 		}
 	}
 }
