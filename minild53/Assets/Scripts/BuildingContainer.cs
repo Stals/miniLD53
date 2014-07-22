@@ -45,7 +45,7 @@ public class BuildingContainer : MonoBehaviour {
 		float targetValue = building.getCurrentBuildingLevel ().getCurrentExpFactor ();
 		progressSlider.value = Mathf.Lerp(progressSlider.value, targetValue, Time.deltaTime * 5f);
 
-		levelLabel.text = "level " + building.currentLevel;
+		levelLabel.text = string.Format("{0}", building.currentLevel);
 	}
 
 	void onBuildingLevelup()
