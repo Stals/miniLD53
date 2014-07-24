@@ -85,6 +85,10 @@ public class BuildingContainer : MonoBehaviour {
 
 		tintableWidget.color = buildingColor;
 		taskContainer.tintableWidget.color = buildingColor;
+
+        /*
+            TODO change button colors
+         */
 		
 		return taskObject;
 	}
