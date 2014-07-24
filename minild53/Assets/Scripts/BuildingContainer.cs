@@ -84,12 +84,24 @@ public class BuildingContainer : MonoBehaviour {
 		taskContainer.updateData ();
 
 		tintableWidget.color = buildingColor;
-		taskContainer.tintableWidget.color = buildingColor;
+		//taskContainer.tintableWidget.color = buildingColor;
 
-        /*
-            TODO change button colors
-         */
-		
+        UIButton button = taskContainer.GetComponentInChildren<UIButton>();
+        button.pressed = Lighten(buildingColor, 0.1f);
+        button.hover = Lighten(buildingColor, 0.2f);
+        button.defaultColor = buildingColor;
+
 		return taskObject;
 	}
+
+    public static Color Lighten(Color inColor, float inAmount)
+    {
+        return new Color(
+            Mathf.Min(1f, inColor.r + 1f * inAmount),
+            Mathf.Min(1f, inColor.g + 1f * inAmount),
+            Mathf.Min(1f, inColor.b + 1f * inAmount),
+            inColor.a);
+    }
+    
+
 }
