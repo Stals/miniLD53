@@ -179,7 +179,7 @@ public class TaskContainer : MonoBehaviour {
 
 
 		bool fullyCompleted = false;
-		slider.value = slider.value + 0.25f;
+        slider.value = slider.value + (1f / getClicksPerTask());
 		if(slider.value >= 1){
 			slider.value -= 1;
 
@@ -228,8 +228,13 @@ public class TaskContainer : MonoBehaviour {
 			break;
             
         case TaskEffectType.BuildingExpChange:
-            task.building.getCurrentBuildingLevel().addExp(effect.amount);
+            task.building.getCurrentBuildingLevel().addExp(effect.amount / getClicksPerTask());
             break;
 		}
 	}
+
+    public int getClicksPerTask()
+    {
+        return 4; // because of the number of weeks
+    }
 }
