@@ -87,8 +87,8 @@ public class BuildingContainer : MonoBehaviour {
 		//taskContainer.tintableWidget.color = buildingColor;
 
         UIButton button = taskContainer.GetComponentInChildren<UIButton>();
-        button.pressed = Lighten(buildingColor, -0.1f);
-        button.hover = Lighten(buildingColor, 0.2f);
+        button.pressed = Lighten(buildingColor, 0.15f);
+        button.hover = Lighten(buildingColor, -0.1f);
         button.defaultColor = buildingColor;
 
 		return taskObject;
