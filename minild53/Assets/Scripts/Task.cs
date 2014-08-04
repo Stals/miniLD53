@@ -54,6 +54,9 @@ public class TaskEffect{
 
 	public TaskEffectType type;
 	public int amount;
+    
+    public static float defaultScaleFactor = 1;
+    public float scaleFactor = defaultScaleFactor;
 
 	static public TaskEffectType stringToType(string str)
 	{

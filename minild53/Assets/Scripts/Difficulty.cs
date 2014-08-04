@@ -11,6 +11,7 @@ public class Difficulty {
 
 	private const float E_CONST = 2.7182f;
 
+
 	// 
 	public List<TaskEffect> getEffectsForLevel(int buildingLevel)
 	{
@@ -22,7 +23,7 @@ public class Difficulty {
 			foreach(TaskEffect effect in effects)
 			{
 				TaskEffect newEffect = new TaskEffect(effect);
-				newEffect.amount = (int)getAmountForLevel(newEffect.amount, buildingLevel);
+				newEffect.amount = (int)getAmountForLevel(newEffect.amount, buildingLevel, effect.scaleFactor);
 				changedEffects.Add(newEffect);
 			}
 
@@ -33,9 +34,9 @@ public class Difficulty {
 		}
 	}
 
-	private float getAmountForLevel(int amount, int level)
+	private float getAmountForLevel(int amount, int level, float scaleFactor)
 	{
-		return amount * level;
+        return amount * level * scaleFactor;
 		//return amount * (level * E_CONST);
 	}
 

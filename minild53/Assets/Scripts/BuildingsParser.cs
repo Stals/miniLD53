@@ -24,9 +24,16 @@ public class BuildingsParser {
 			TaskEffect effect = new TaskEffect ();
 			effect.type = TaskEffect.stringToType(effectNode.Attributes["Type"].Value);
 			effect.amount = int.Parse(effectNode.Attributes["Amount"].Value);
-			
+
+            var scaleAttr = effectNode.Attributes["ScaleFactor"];
+            if(scaleAttr != null){
+                effect.scaleFactor = float.Parse(scaleAttr.Value);
+
+            }else{
+                effect.scaleFactor = TaskEffect.defaultScaleFactor;
+            }
+
 			effects.Add(effect);
-		
 		}
 
 		return effects;

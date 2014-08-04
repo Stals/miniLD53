@@ -2,37 +2,37 @@
 	<Difficulties>
     <Difficulty Name="TooEasy" >
 			<Effect Type="Exp" Amount="80" />
-			<Effect Type="Money" Amount="50" />
+			<Effect Type="Money" Amount="50" ScaleFactor="2" />
 			<Effect Type="Energy" Amount="-5" />
 		</Difficulty>
   
     <Difficulty Name="VeryEasy" >
 			<Effect Type="Exp" Amount="60" />
-			<Effect Type="Money" Amount="40" />
+			<Effect Type="Money" Amount="40" ScaleFactor="2" />
 			<Effect Type="Energy" Amount="-10" />
 		</Difficulty>
     
 		<Difficulty Name="Easy" >
 			<Effect Type="Exp" Amount="40" />
-			<Effect Type="Money" Amount="30" />
+			<Effect Type="Money" Amount="30" ScaleFactor="2" />
 			<Effect Type="Energy" Amount="-15" />
 		</Difficulty>
     
     <Difficulty Name="Medium" >
 			<Effect Type="Exp" Amount="30" />
-			<Effect Type="Money" Amount="30" />
+			<Effect Type="Money" Amount="30" ScaleFactor="2" />
 			<Effect Type="Energy" Amount="-20" />
 		</Difficulty>
     
     <Difficulty Name="Hard" >
 			<Effect Type="Exp" Amount="40" />
-			<Effect Type="Money" Amount="30" />
+			<Effect Type="Money" Amount="30" ScaleFactor="2" />
 			<Effect Type="Energy" Amount="-40" />
 		</Difficulty>
     
     <Difficulty Name="UltraHard" >
 			<Effect Type="Exp" Amount="50" />
-			<Effect Type="Money" Amount="30" />
+			<Effect Type="Money" Amount="30" ScaleFactor="2" />
 			<Effect Type="Energy" Amount="-50" />
 		</Difficulty>
 
@@ -47,21 +47,21 @@
     
     <Difficulty Name="RestForMoney" >
 			<Effect Type="Energy" Amount="20" />
-      <Effect Type="Money" Amount="-10" />
+      <Effect Type="Money" Amount="-10" ScaleFactor="2" />
 		</Difficulty>
 
 		<Difficulty Name="HomeUpgrade1" >
-			<Effect Type="Money" Amount="-60" />
+			<Effect Type="Money" Amount="-60" ScaleFactor="2" />
 			<Effect Type="Exp" Amount="50" />
 		</Difficulty>
     
     <Difficulty Name="HomeUpgrade2" >
-			<Effect Type="Money" Amount="-80" />
+			<Effect Type="Money" Amount="-80" ScaleFactor="2" />
 			<Effect Type="Exp" Amount="50" />
 		</Difficulty>
     
     <Difficulty Name="HomeUpgrade3" >
-			<Effect Type="Money" Amount="-100" />
+			<Effect Type="Money" Amount="-100" ScaleFactor="2" />
 			<Effect Type="Exp" Amount="50" />
 		</Difficulty>
     
