@@ -228,7 +228,7 @@ public class TaskContainer : MonoBehaviour {
 			break;
             
         case TaskEffectType.BuildingExpChange:
-            task.building.getCurrentBuildingLevel().addExp(effect.amount / getClicksPerTask());
+            task.building.getCurrentBuildingLevel().addExp(effect.amount);
             break;
 		}
 	}
