@@ -23,10 +23,14 @@ public class BuildingContainer : MonoBehaviour {
 	[SerializeField]
 	public Color buildingColor;
 	
+    [SerializeField]
+    UILabel levelExpLabel;
 
 	// Use this for initialization
 	void Start () {
 		// TODO update here
+
+        levelExpLabel.gameObject.SetActive(Game.Instance.isDebug());
 	}
 	
 	// Update is called once per frame
@@ -46,6 +50,13 @@ public class BuildingContainer : MonoBehaviour {
 		progressSlider.value = Mathf.Lerp(progressSlider.value, targetValue, Time.deltaTime * 5f);
 
 		levelLabel.text = string.Format("{0}", building.currentLevel);
+
+        // TODO comment in prod, or research defines in c#
+        if (Game.Instance.isDebug())
+        {
+            BuildingLevel buildingLevel = building.getCurrentBuildingLevel();
+            levelExpLabel.text = buildingLevel.currentExp.ToString() + " / " + buildingLevel.maxExp.ToString();
+        }
 	}
 
 	void onBuildingLevelup()
