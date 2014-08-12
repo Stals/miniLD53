@@ -44,9 +44,16 @@ public class TaskContainer : MonoBehaviour {
 	public Task task;
 
 	UISlider slider;
+
+
+    [SerializeField]
+    UILabel addExpLabel;
+
 	// Use this for initialization
 	void Start () {
 		slider = GetComponent<UISlider> ();
+
+        addExpLabel.gameObject.SetActive(Game.Instance.isDebug());
 	}
 	
 	// Update is called once per frame
@@ -67,6 +74,15 @@ public class TaskContainer : MonoBehaviour {
 		updateEffect (moneyEffect, task.getEffectByType (TaskEffectType.MoneyChange));
 
 		updateRequirenments ();
+
+
+        if (Game.Instance.isDebug())
+        {
+            TaskEffect expTask = task.getEffectByType(TaskEffectType.BuildingExpChange);
+            if(expTask != null){
+                addExpLabel.text = "+" + expTask.amount.ToString();
+            }
+        }
 	}
 
      public void updateEffect(GameObject effect, TaskEffect taskEffect)
