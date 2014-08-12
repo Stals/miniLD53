@@ -62,7 +62,7 @@ public class BuildingContainer : MonoBehaviour {
 		}
 
 		foreach (Task task in building.getCurrentBuildingLevel().tasks) {
-			GameObject taskObject = createTask(this, task);
+			/*GameObject taskObject = */createTask(this, task);
 
 			// TODo - subscribe to add exp
 		}

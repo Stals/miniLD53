@@ -53,4 +53,9 @@ public class Game  {
 		}
 		return null;
 	}
+
+    public bool isDebug()
+    {
+        return true;
+    }
 }

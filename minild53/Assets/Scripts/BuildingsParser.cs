@@ -146,7 +146,6 @@ public class BuildingsParser {
 		var PrnFile = Resources.Load("data/buildings") as TextAsset;
 		xmlDoc.LoadXml(PrnFile.text); // load the file.
 
-		XmlNode diffNode = xmlDoc.GetElementsByTagName("Difficulties")[0];
 		difficulties = getDifficultiesFromXML (xmlDoc.GetElementsByTagName("Difficulties")[0]);
 
 		List<Building> buildings = getBuildingsFromXML (xmlDoc.GetElementsByTagName ("Buildings") [0]);

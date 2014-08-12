@@ -12,11 +12,11 @@ public class GuiUpdater : MonoBehaviour {
 	[SerializeField]
 	UISlider energyBar;
 
-	Player player;
+//	Player player;
 
 	void Start()
 	{
-		player = Game.Instance.getPlayer ();
+		//player = Game.Instance.getPlayer ();
 	}
 
 	void OnGUI()
